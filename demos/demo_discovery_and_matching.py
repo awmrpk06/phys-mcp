@@ -2,14 +2,24 @@
 
 from __future__ import annotations
 
-from common import (
-    build_default_orchestrator,
-    make_chemical_task,
-    make_edge_task,
-    make_wetware_task,
-    print_header,
-    print_match_report,
-)
+try:
+    from .common import (
+        build_default_orchestrator,
+        make_chemical_task,
+        make_edge_task,
+        make_wetware_task,
+        print_header,
+        print_match_report,
+    )
+except ImportError:
+    from common import (
+        build_default_orchestrator,
+        make_chemical_task,
+        make_edge_task,
+        make_wetware_task,
+        print_header,
+        print_match_report,
+    )
 
 
 def main() -> None:

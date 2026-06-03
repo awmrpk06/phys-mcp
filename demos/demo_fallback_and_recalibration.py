@@ -2,7 +2,10 @@
 
 from __future__ import annotations
 
-from common import make_edge_task, print_header, print_run_summary
+try:
+    from .common import make_edge_task, print_header, print_run_summary
+except ImportError:
+    from common import make_edge_task, print_header, print_run_summary
 
 from adapters.chemical_adapter import ChemicalAdapter
 from adapters.edge_adapter import EdgeAdapter

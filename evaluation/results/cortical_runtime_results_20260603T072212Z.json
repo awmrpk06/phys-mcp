@@ -1,0 +1,113 @@
+[
+  {
+    "task_id": "cortical-run-1",
+    "success": true,
+    "selected_backend": "cortical-labs-backend",
+    "used_fallback": false,
+    "failure_reason": null,
+    "execution_latency_ms": 275.8362760005184,
+    "confidence": 0.75,
+    "response_fingerprint": "recording_completed",
+    "stim_channel": 1,
+    "stim_amplitude_ua": 0.4,
+    "observation_window_ms": 100,
+    "recording_path": "/home/uit/Projects/phys-mcp/2026-06-03_07-22-11.624+00-00_recording.h5",
+    "recording_name": "2026-06-03_07-22-11.624+00-00_recording.h5",
+    "backend_latency_ms": 275.8362760005184,
+    "observation_latency_ms": 254.77033300012408,
+    "readiness_before": "unavailable",
+    "health_before": "unknown",
+    "readiness_after": "ready",
+    "health_after": "healthy",
+    "channel_count": 64,
+    "fps": 25000,
+    "drift_score": 0.0,
+    "age_of_information_ms": 0.0,
+    "sdk_available": true,
+    "decision_notes": [
+      "Selected primary candidate 'cortical-labs-backend'."
+    ],
+    "validation_failures": [],
+    "recovery_actions": [],
+    "system_attributes": {},
+    "raw_backend_metadata": {
+      "system_attributes": {},
+      "channel_count": 64,
+      "fps": 25000
+    }
+  },
+  {
+    "task_id": "cortical-run-2",
+    "success": true,
+    "selected_backend": "cortical-labs-backend",
+    "used_fallback": false,
+    "failure_reason": null,
+    "execution_latency_ms": 260.32926800053247,
+    "confidence": 0.75,
+    "response_fingerprint": "recording_completed",
+    "stim_channel": 3,
+    "stim_amplitude_ua": 0.4,
+    "observation_window_ms": 120,
+    "recording_path": "/home/uit/Projects/phys-mcp/2026-06-03_07-22-11.931+00-00_recording.h5",
+    "recording_name": "2026-06-03_07-22-11.931+00-00_recording.h5",
+    "backend_latency_ms": 260.32926800053247,
+    "observation_latency_ms": 239.34092600029544,
+    "readiness_before": "ready",
+    "health_before": "healthy",
+    "readiness_after": "ready",
+    "health_after": "healthy",
+    "channel_count": 64,
+    "fps": 25000,
+    "drift_score": 0.0,
+    "age_of_information_ms": 0.0,
+    "sdk_available": true,
+    "decision_notes": [
+      "Selected primary candidate 'cortical-labs-backend'."
+    ],
+    "validation_failures": [],
+    "recovery_actions": [],
+    "system_attributes": {},
+    "raw_backend_metadata": {
+      "system_attributes": {},
+      "channel_count": 64,
+      "fps": 25000
+    }
+  },
+  {
+    "task_id": "cortical-run-3",
+    "success": true,
+    "selected_backend": "cortical-labs-backend",
+    "used_fallback": false,
+    "failure_reason": null,
+    "execution_latency_ms": 304.7023219996845,
+    "confidence": 0.75,
+    "response_fingerprint": "recording_completed",
+    "stim_channel": 7,
+    "stim_amplitude_ua": 0.5,
+    "observation_window_ms": 140,
+    "recording_path": "/home/uit/Projects/phys-mcp/2026-06-03_07-22-12.221+00-00_recording.h5",
+    "recording_name": "2026-06-03_07-22-12.221+00-00_recording.h5",
+    "backend_latency_ms": 304.7023219996845,
+    "observation_latency_ms": 283.73321300023235,
+    "readiness_before": "ready",
+    "health_before": "healthy",
+    "readiness_after": "ready",
+    "health_after": "healthy",
+    "channel_count": 64,
+    "fps": 25000,
+    "drift_score": 0.0,
+    "age_of_information_ms": 0.0,
+    "sdk_available": true,
+    "decision_notes": [
+      "Selected primary candidate 'cortical-labs-backend'."
+    ],
+    "validation_failures": [],
+    "recovery_actions": [],
+    "system_attributes": {},
+    "raw_backend_metadata": {
+      "system_attributes": {},
+      "channel_count": 64,
+      "fps": 25000
+    }
+  }
+]

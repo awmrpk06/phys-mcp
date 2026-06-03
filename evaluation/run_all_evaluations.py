@@ -2,12 +2,20 @@
 
 from __future__ import annotations
 
-from evaluate_externalized_backend import evaluate as evaluate_externalized_backend
-from evaluate_failure_campaign import evaluate as evaluate_failure_campaign
-from evaluate_matching import evaluate as evaluate_matching
-from evaluate_matching_baselines import evaluate as evaluate_matching_baselines
-from evaluate_overhead import evaluate as evaluate_overhead
-from evaluate_portability import evaluate as evaluate_portability
+try:
+    from .evaluate_externalized_backend import evaluate as evaluate_externalized_backend
+    from .evaluate_failure_campaign import evaluate as evaluate_failure_campaign
+    from .evaluate_matching import evaluate as evaluate_matching
+    from .evaluate_matching_baselines import evaluate as evaluate_matching_baselines
+    from .evaluate_overhead import evaluate as evaluate_overhead
+    from .evaluate_portability import evaluate as evaluate_portability
+except ImportError:
+    from evaluate_externalized_backend import evaluate as evaluate_externalized_backend
+    from evaluate_failure_campaign import evaluate as evaluate_failure_campaign
+    from evaluate_matching import evaluate as evaluate_matching
+    from evaluate_matching_baselines import evaluate as evaluate_matching_baselines
+    from evaluate_overhead import evaluate as evaluate_overhead
+    from evaluate_portability import evaluate as evaluate_portability
 
 
 def main() -> None:

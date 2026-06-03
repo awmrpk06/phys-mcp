@@ -12,11 +12,11 @@
     "backend_id": "cortical-labs-backend",
     "display_name": "Cortical Labs CL API Backend",
     "lifecycle_reset_modes": "soft_reset,rest,recalibrate",
-    "prepare_details": "Cortical Labs SDK not available. Install cl-sdk or run on a CL1 system to enable this adapter.",
-    "prepare_ready": false,
+    "prepare_details": "Cortical Labs session opened successfully. channels=64, fps=25000",
+    "prepare_ready": true,
     "required_modalities": "spikes",
-    "sdk_available": false,
-    "telemetry_fields": "last_latency_ms,loop_timeout_events,drift_score"
+    "sdk_available": true,
+    "telemetry_fields": "backend_latency_ms,observation_latency_ms,readiness_state,health_status,recording_path,channel_count,fps,drift_score,age_of_information_ms"
   },
   "invocation_shared_key_ratio": 1.0,
   "runs": [

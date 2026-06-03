@@ -4,8 +4,12 @@ from __future__ import annotations
 
 from pydantic import ValidationError
 
-from common import RESULTS_DIR, save_csv, save_json
-from plots import save_bar_chart
+try:
+    from .common import RESULTS_DIR, save_csv, save_json
+    from .plots import save_bar_chart
+except ImportError:
+    from common import RESULTS_DIR, save_csv, save_json
+    from plots import save_bar_chart
 
 from demos.common import build_default_orchestrator, make_chemical_task, make_edge_task, make_wetware_task
 from core.task_model import OutputPreference, TaskKind, TaskRequest

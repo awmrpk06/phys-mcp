@@ -434,8 +434,29 @@ The repository also contains dedicated scripts for:
 - `evaluation.evaluate_matching_baselines`
 - `evaluation.evaluate_overhead`
 - `evaluation.evaluate_portability`
+- `evaluation.evaluate_tegra_resources` on NVIDIA Jetson devices with `tegrastats`
 
 These scripts can be run individually from the project root with `python -m ...`.
+
+### 8.5 Jetson / Orin resource evaluation
+
+On Jetson devices, `tegrastats` can be used to collect power, memory, CPU, GPU,
+and temperature samples while a phys-MCP workload is running.
+
+```bash
+python -m evaluation.evaluate_tegra_resources --workload edge_control --iterations 5000 --interval-ms 250
+```
+
+The script writes JSON, CSV, raw `tegrastats` logs, and PNG bar charts under `evaluation/results/`.
+This evaluation is intentionally not part of the default bundled evaluation suite,
+because power and memory measurements depend on the Jetson power mode, clocks,
+temperature, and background system load.
+
+A visual PDF report can be generated from the collected artifacts with:
+
+```bash
+python -m evaluation.create_embedded_edge_report_pdf
+```
 
 ---
 

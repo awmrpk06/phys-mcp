@@ -5,7 +5,10 @@ from __future__ import annotations
 from statistics import mean, pstdev
 from time import perf_counter
 
-from common import PROJECT_ROOT, RESULTS_DIR, save_csv, save_json
+try:
+    from .common import PROJECT_ROOT, RESULTS_DIR, save_csv, save_json
+except ImportError:
+    from common import PROJECT_ROOT, RESULTS_DIR, save_csv, save_json
 
 from adapters.remote_edge_adapter import RemoteEdgeAdapter
 from demos.common import make_remote_edge_monitoring_task

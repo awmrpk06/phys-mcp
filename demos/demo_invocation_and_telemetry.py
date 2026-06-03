@@ -2,12 +2,20 @@
 
 from __future__ import annotations
 
-from common import (
-    build_default_orchestrator,
-    make_chemical_task,
-    print_header,
-    print_run_summary,
-)
+try:
+    from .common import (
+        build_default_orchestrator,
+        make_chemical_task,
+        print_header,
+        print_run_summary,
+    )
+except ImportError:
+    from common import (
+        build_default_orchestrator,
+        make_chemical_task,
+        print_header,
+        print_run_summary,
+    )
 
 
 def main() -> None:

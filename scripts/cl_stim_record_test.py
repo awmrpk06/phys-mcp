@@ -8,7 +8,8 @@ import cl
 def main():
     print("Opening CL API...")
     with cl.open() as neurons:
-        attrs = cl.get_system_attributes()
+        get_system_attributes = getattr(cl, "get_system_attributes", None)
+        attrs = get_system_attributes() if get_system_attributes is not None else {}
         print("Connected.")
         print("System attributes keys:", sorted(attrs.keys()))
         print("Channel count:", neurons.get_channel_count())
