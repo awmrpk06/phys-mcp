@@ -1,0 +1,114 @@
+{
+  "workload": "edge_control",
+  "iterations": 50,
+  "interval_ms": 250,
+  "elapsed_s": 0.5437626979983179,
+  "platform": {
+    "machine": "aarch64",
+    "platform": "Linux-5.15.185-tegra-aarch64-with-glibc2.35",
+    "python": "3.10.12"
+  },
+  "process": {
+    "maxrss_before_kb": 67856,
+    "maxrss_after_kb": 68608,
+    "maxrss_delta_kb": 752
+  },
+  "workload_result": {
+    "iterations": 50,
+    "successful_runs": 50,
+    "latency_mean_ms": 0.5153298401637585,
+    "latency_median_ms": 0.4701730003944249,
+    "latency_p95_ms": 0.615282000580919,
+    "latency_max_ms": 1.864820998889627
+  },
+  "tegrastats_summary": {
+    "sample_count": 2,
+    "ram_used_mean_mb": 3860.5,
+    "ram_used_max_mb": 3861.0,
+    "ram_total_mb": 7607,
+    "swap_used_max_mb": 6.0,
+    "cpu_mean_percent_avg": 38.91666666666667,
+    "cpu_max_percent_peak": 58.0,
+    "gr3d_percent_avg": 0.0,
+    "gr3d_percent_peak": 0.0,
+    "temperature_max_c": 53.843,
+    "vdd_in_mean_mw": 6228.5,
+    "vdd_in_max_mw": 6307.0,
+    "vdd_in_min_mw": 6150.0
+  },
+  "samples": [
+    {
+      "raw": "06-03-2026 14:55:07 RAM 3861/7607MB (lfb 4x4MB) SWAP 6/3804MB (cached 0MB) CPU [52%@1344,50%@1344,48%@1344,56%@1344,20%@806,4%@806] GR3D_FREQ 0% cpu@53.843C soc2@52.031C soc0@53.437C gpu@52.906C tj@53.843C soc1@53.593C VDD_IN 6307mW/6307mW VDD_CPU_GPU_CV 1535mW/1535mW VDD_SOC 1616mW/1616mW",
+      "ram_used_mb": 3861,
+      "ram_total_mb": 7607,
+      "swap_used_mb": 6,
+      "swap_total_mb": 3804,
+      "cpu_mean_percent": 38.333333333333336,
+      "cpu_max_percent": 56,
+      "gr3d_percent": 0,
+      "temperatures_c": {
+        "cpu": 53.843,
+        "soc2": 52.031,
+        "soc0": 53.437,
+        "gpu": 52.906,
+        "tj": 53.843,
+        "soc1": 53.593
+      },
+      "max_temperature_c": 53.843,
+      "power_rails": {
+        "VDD_IN": {
+          "current_mw": 6307,
+          "avg_mw": 6307
+        },
+        "VDD_CPU_GPU_CV": {
+          "current_mw": 1535,
+          "avg_mw": 1535
+        },
+        "VDD_SOC": {
+          "current_mw": 1616,
+          "avg_mw": 1616
+        }
+      },
+      "vdd_in_mw": 6307
+    },
+    {
+      "raw": "06-03-2026 14:55:07 RAM 3860/7607MB (lfb 4x4MB) SWAP 6/3804MB (cached 0MB) CPU [48%@1190,58%@1190,50%@1190,50%@1190,19%@806,12%@806] GR3D_FREQ 0% cpu@53.468C soc2@52C soc0@53.562C gpu@52.687C tj@53.593C soc1@53.593C VDD_IN 6150mW/6229mW VDD_CPU_GPU_CV 1416mW/1476mW VDD_SOC 1616mW/1616mW",
+      "ram_used_mb": 3860,
+      "ram_total_mb": 7607,
+      "swap_used_mb": 6,
+      "swap_total_mb": 3804,
+      "cpu_mean_percent": 39.5,
+      "cpu_max_percent": 58,
+      "gr3d_percent": 0,
+      "temperatures_c": {
+        "cpu": 53.468,
+        "soc2": 52.0,
+        "soc0": 53.562,
+        "gpu": 52.687,
+        "tj": 53.593,
+        "soc1": 53.593
+      },
+      "max_temperature_c": 53.593,
+      "power_rails": {
+        "VDD_IN": {
+          "current_mw": 6150,
+          "avg_mw": 6229
+        },
+        "VDD_CPU_GPU_CV": {
+          "current_mw": 1416,
+          "avg_mw": 1476
+        },
+        "VDD_SOC": {
+          "current_mw": 1616,
+          "avg_mw": 1616
+        }
+      },
+      "vdd_in_mw": 6150
+    }
+  ],
+  "result_files": {
+    "json": "/home/uit/Projects/phys-mcp/evaluation/results/tegra_resources_edge_control_20260603T075507Z.json",
+    "csv": "/home/uit/Projects/phys-mcp/evaluation/results/tegra_resources_edge_control_20260603T075507Z.csv",
+    "raw_log": "/home/uit/Projects/phys-mcp/evaluation/results/tegra_resources_edge_control_20260603T075507Z.log"
+  }
+}

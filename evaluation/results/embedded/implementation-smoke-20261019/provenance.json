@@ -1,0 +1,989 @@
+{
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "ambient_temperature_c": null,
+  "background_workload_controlled": false,
+  "captured_utc": "2026-10-19T15:44:28.799662+00:00",
+  "cooling_configuration": null,
+  "cpu_governors": {
+    "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor": "schedutil",
+    "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor": "schedutil",
+    "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor": "schedutil",
+    "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor": "schedutil",
+    "/sys/devices/system/cpu/cpu4/cpufreq/scaling_governor": "schedutil",
+    "/sys/devices/system/cpu/cpu5/cpufreq/scaling_governor": "schedutil"
+  },
+  "device_model": "NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super",
+  "git_revision": {
+    "returncode": 128,
+    "value": null
+  },
+  "git_status": {
+    "returncode": 128,
+    "value": null
+  },
+  "l4t_release": "# R36 (release), REVISION: 5.0, GCID: 43688277, BOARD: generic, EABI: aarch64, DATE: Fri Jan 16 03:50:45 UTC 2026\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia",
+  "machine": "aarch64",
+  "memory": "MemTotal:        7789952 kB\nMemFree:         1524676 kB\nMemAvailable:    2950016 kB\nBuffers:          144528 kB\nCached:          1350412 kB\nSwapCached:           40 kB\nActive:          1144652 kB\nInactive:        4341236 kB\nActive(anon):     118160 kB\nInactive(anon):  3936808 kB\nActive(file):    1026492 kB\nInactive(file):   404428 kB\nUnevictable:       35896 kB\nMlocked:               0 kB\nSwapTotal:       3894960 kB\nSwapFree:        3843760 kB\nDirty:              1028 kB\nWriteback:             0 kB\nAnonPages:       3910332 kB\nMapped:           486904 kB\nShmem:             28164 kB\nKReclaimable:     213824 kB\nSlab:             333060 kB\nSReclaimable:     213824 kB\nSUnreclaim:       119236 kB\nKernelStack:       12976 kB\nPageTables:        59816 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     7789936 kB\nCommitted_AS:    9567284 kB\nVmallocTotal:   133143592960 kB\nVmallocUsed:       75220 kB\nVmallocChunk:          0 kB\nPercpu:             5544 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:   1312768 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nCmaTotal:         262144 kB\nCmaFree:           22204 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB",
+  "notes": [
+    "Current environment only; not historical June settings.",
+    "No .env or unfiltered environment captured."
+  ],
+  "online_cpus": 6,
+  "packages": [
+    {
+      "name": "annotated-types",
+      "version": "0.7.0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.13.0"
+    },
+    {
+      "name": "appdirs",
+      "version": "1.4.4"
+    },
+    {
+      "name": "apturl",
+      "version": "0.5.2"
+    },
+    {
+      "name": "argon2-cffi",
+      "version": "25.1.0"
+    },
+    {
+      "name": "argon2-cffi-bindings",
+      "version": "25.1.0"
+    },
+    {
+      "name": "arrow",
+      "version": "1.4.0"
+    },
+    {
+      "name": "asttokens",
+      "version": "3.0.1"
+    },
+    {
+      "name": "async-lru",
+      "version": "2.3.0"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "attrs",
+      "version": "21.2.0"
+    },
+    {
+      "name": "babel",
+      "version": "2.18.0"
+    },
+    {
+      "name": "bcrypt",
+      "version": "3.2.0"
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.14.3"
+    },
+    {
+      "name": "beniget",
+      "version": "0.4.1"
+    },
+    {
+      "name": "bleach",
+      "version": "6.3.0"
+    },
+    {
+      "name": "blinker",
+      "version": "1.4"
+    },
+    {
+      "name": "blosc2",
+      "version": "2.7.1"
+    },
+    {
+      "name": "Brlapi",
+      "version": "0.8.3"
+    },
+    {
+      "name": "Brotli",
+      "version": "1.0.9"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.5.20"
+    },
+    {
+      "name": "certifi",
+      "version": "2020.6.20"
+    },
+    {
+      "name": "cffi",
+      "version": "2.0.0"
+    },
+    {
+      "name": "chardet",
+      "version": "4.0.0"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.7"
+    },
+    {
+      "name": "cl-sdk",
+      "version": "0.1.0"
+    },
+    {
+      "name": "click",
+      "version": "8.0.3"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.4"
+    },
+    {
+      "name": "comm",
+      "version": "0.2.3"
+    },
+    {
+      "name": "cpuset",
+      "version": "1.6"
+    },
+    {
+      "name": "cryptography",
+      "version": "48.0.0"
+    },
+    {
+      "name": "cryptography",
+      "version": "3.4.8"
+    },
+    {
+      "name": "cupshelpers",
+      "version": "1.0"
+    },
+    {
+      "name": "cycler",
+      "version": "0.11.0"
+    },
+    {
+      "name": "dbus-python",
+      "version": "1.2.18"
+    },
+    {
+      "name": "debugpy",
+      "version": "1.8.21"
+    },
+    {
+      "name": "decorator",
+      "version": "4.4.2"
+    },
+    {
+      "name": "defer",
+      "version": "1.0.6"
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "name": "distro",
+      "version": "1.7.0"
+    },
+    {
+      "name": "distro-info",
+      "version": "1.1+ubuntu0.2"
+    },
+    {
+      "name": "dotenv",
+      "version": "0.9.9"
+    },
+    {
+      "name": "duplicity",
+      "version": "0.8.21"
+    },
+    {
+      "name": "exceptiongroup",
+      "version": "1.3.1"
+    },
+    {
+      "name": "executing",
+      "version": "2.2.1"
+    },
+    {
+      "name": "fasteners",
+      "version": "0.14.1"
+    },
+    {
+      "name": "fastjsonschema",
+      "version": "2.21.2"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.29.1"
+    },
+    {
+      "name": "fqdn",
+      "version": "1.5.1"
+    },
+    {
+      "name": "fs",
+      "version": "2.4.12"
+    },
+    {
+      "name": "future",
+      "version": "0.18.2"
+    },
+    {
+      "name": "gast",
+      "version": "0.5.2"
+    },
+    {
+      "name": "google-auth",
+      "version": "2.53.0"
+    },
+    {
+      "name": "google-genai",
+      "version": "2.7.0"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httplib2",
+      "version": "0.20.2"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "idna",
+      "version": "3.3"
+    },
+    {
+      "name": "importlib-metadata",
+      "version": "4.6.4"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0"
+    },
+    {
+      "name": "ipykernel",
+      "version": "7.2.0"
+    },
+    {
+      "name": "ipython",
+      "version": "8.39.0"
+    },
+    {
+      "name": "ipywidgets",
+      "version": "8.1.8"
+    },
+    {
+      "name": "isoduration",
+      "version": "20.11.0"
+    },
+    {
+      "name": "jedi",
+      "version": "0.20.0"
+    },
+    {
+      "name": "jeepney",
+      "version": "0.7.1"
+    },
+    {
+      "name": "jetson-stats",
+      "version": "7.2.1"
+    },
+    {
+      "name": "Jetson.GPIO",
+      "version": "2.1.9"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "json5",
+      "version": "0.14.0"
+    },
+    {
+      "name": "jsonpointer",
+      "version": "3.1.1"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "jupyter-events",
+      "version": "0.12.1"
+    },
+    {
+      "name": "jupyter-lsp",
+      "version": "2.3.1"
+    },
+    {
+      "name": "jupyter_client",
+      "version": "8.8.0"
+    },
+    {
+      "name": "jupyter_core",
+      "version": "5.9.1"
+    },
+    {
+      "name": "jupyter_server",
+      "version": "2.19.0"
+    },
+    {
+      "name": "jupyter_server_terminals",
+      "version": "0.5.4"
+    },
+    {
+      "name": "jupyterlab",
+      "version": "4.5.7"
+    },
+    {
+      "name": "jupyterlab_pygments",
+      "version": "0.3.0"
+    },
+    {
+      "name": "jupyterlab_server",
+      "version": "2.28.0"
+    },
+    {
+      "name": "jupyterlab_widgets",
+      "version": "3.0.16"
+    },
+    {
+      "name": "keyring",
+      "version": "23.5.0"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.3.2"
+    },
+    {
+      "name": "language-selector",
+      "version": "0.1"
+    },
+    {
+      "name": "lark",
+      "version": "1.3.1"
+    },
+    {
+      "name": "launchpadlib",
+      "version": "1.10.16"
+    },
+    {
+      "name": "lazr.restfulclient",
+      "version": "0.14.4"
+    },
+    {
+      "name": "lazr.uri",
+      "version": "1.0.6"
+    },
+    {
+      "name": "lockfile",
+      "version": "0.12.2"
+    },
+    {
+      "name": "louis",
+      "version": "3.20.0"
+    },
+    {
+      "name": "lxml",
+      "version": "4.8.0"
+    },
+    {
+      "name": "lz4",
+      "version": "3.1.3+dfsg"
+    },
+    {
+      "name": "macaroonbakery",
+      "version": "1.3.1"
+    },
+    {
+      "name": "Mako",
+      "version": "1.1.3"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "2.0.1"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.5.1"
+    },
+    {
+      "name": "matplotlib-inline",
+      "version": "0.2.2"
+    },
+    {
+      "name": "mistune",
+      "version": "3.2.1"
+    },
+    {
+      "name": "monotonic",
+      "version": "1.6"
+    },
+    {
+      "name": "more-itertools",
+      "version": "8.10.0"
+    },
+    {
+      "name": "mpmath",
+      "version": "0.0.0"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.1.2"
+    },
+    {
+      "name": "msgpack-numpy",
+      "version": "0.4.8"
+    },
+    {
+      "name": "nbclient",
+      "version": "0.10.4"
+    },
+    {
+      "name": "nbconvert",
+      "version": "7.17.1"
+    },
+    {
+      "name": "nbformat",
+      "version": "5.10.4"
+    },
+    {
+      "name": "ndindex",
+      "version": "1.10.1"
+    },
+    {
+      "name": "nest-asyncio",
+      "version": "1.6.0"
+    },
+    {
+      "name": "notebook_shim",
+      "version": "0.2.4"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.1"
+    },
+    {
+      "name": "numpy",
+      "version": "1.24.4"
+    },
+    {
+      "name": "numpy",
+      "version": "1.21.5"
+    },
+    {
+      "name": "nvidia-ml-py",
+      "version": "13.610.43"
+    },
+    {
+      "name": "oauthlib",
+      "version": "3.2.0"
+    },
+    {
+      "name": "olefile",
+      "version": "0.46"
+    },
+    {
+      "name": "onboard",
+      "version": "1.4.1"
+    },
+    {
+      "name": "overrides",
+      "version": "7.7.0"
+    },
+    {
+      "name": "packaging",
+      "version": "26.2"
+    },
+    {
+      "name": "packaging",
+      "version": "21.3"
+    },
+    {
+      "name": "pandas",
+      "version": "1.3.5"
+    },
+    {
+      "name": "pandocfilters",
+      "version": "1.5.1"
+    },
+    {
+      "name": "paramiko",
+      "version": "2.9.3"
+    },
+    {
+      "name": "parso",
+      "version": "0.8.7"
+    },
+    {
+      "name": "pexpect",
+      "version": "4.8.0"
+    },
+    {
+      "name": "Pillow",
+      "version": "9.0.1"
+    },
+    {
+      "name": "pip",
+      "version": "26.1.2"
+    },
+    {
+      "name": "pip",
+      "version": "22.0.2"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.10.0"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0"
+    },
+    {
+      "name": "ply",
+      "version": "3.11"
+    },
+    {
+      "name": "prometheus_client",
+      "version": "0.25.0"
+    },
+    {
+      "name": "prompt_toolkit",
+      "version": "3.0.52"
+    },
+    {
+      "name": "protobuf",
+      "version": "3.12.4"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "ptyprocess",
+      "version": "0.7.0"
+    },
+    {
+      "name": "pure_eval",
+      "version": "0.2.3"
+    },
+    {
+      "name": "py-cpuinfo",
+      "version": "9.0.0"
+    },
+    {
+      "name": "pyasn1",
+      "version": "0.6.3"
+    },
+    {
+      "name": "pyasn1_modules",
+      "version": "0.4.2"
+    },
+    {
+      "name": "pycairo",
+      "version": "1.20.1"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0"
+    },
+    {
+      "name": "pycups",
+      "version": "2.0.1"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.4"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.4"
+    },
+    {
+      "name": "pygame",
+      "version": "2.6.1"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.20.0"
+    },
+    {
+      "name": "PyGObject",
+      "version": "3.42.1"
+    },
+    {
+      "name": "PyJWT",
+      "version": "2.3.0"
+    },
+    {
+      "name": "pymacaroons",
+      "version": "0.13.0"
+    },
+    {
+      "name": "PyNaCl",
+      "version": "1.5.0"
+    },
+    {
+      "name": "PyOpenGL",
+      "version": "3.1.5"
+    },
+    {
+      "name": "pyparsing",
+      "version": "2.4.7"
+    },
+    {
+      "name": "pyRFC3339",
+      "version": "1.1"
+    },
+    {
+      "name": "pytest",
+      "version": "9.0.3"
+    },
+    {
+      "name": "python-apt",
+      "version": "2.4.0+ubuntu4.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.8.1"
+    },
+    {
+      "name": "python-dbusmock",
+      "version": "0.27.5"
+    },
+    {
+      "name": "python-debian",
+      "version": "0.1.43+ubuntu1.1"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.2"
+    },
+    {
+      "name": "python-json-logger",
+      "version": "4.1.0"
+    },
+    {
+      "name": "pythran",
+      "version": "0.10.0"
+    },
+    {
+      "name": "pytz",
+      "version": "2022.1"
+    },
+    {
+      "name": "pyxdg",
+      "version": "0.27"
+    },
+    {
+      "name": "PyYAML",
+      "version": "5.4.1"
+    },
+    {
+      "name": "pyzmq",
+      "version": "27.1.0"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "requests",
+      "version": "2.25.1"
+    },
+    {
+      "name": "rfc3339-validator",
+      "version": "0.1.4"
+    },
+    {
+      "name": "rfc3986-validator",
+      "version": "0.1.1"
+    },
+    {
+      "name": "rfc3987-syntax",
+      "version": "1.1.0"
+    },
+    {
+      "name": "rpds-py",
+      "version": "0.30.0"
+    },
+    {
+      "name": "ruff",
+      "version": "0.17.1"
+    },
+    {
+      "name": "scipy",
+      "version": "1.8.0"
+    },
+    {
+      "name": "SecretStorage",
+      "version": "3.3.1"
+    },
+    {
+      "name": "Send2Trash",
+      "version": "2.1.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "82.0.1"
+    },
+    {
+      "name": "setuptools",
+      "version": "59.6.0"
+    },
+    {
+      "name": "six",
+      "version": "1.16.0"
+    },
+    {
+      "name": "smbus2",
+      "version": "0.6.1"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "name": "soupsieve",
+      "version": "2.8.4"
+    },
+    {
+      "name": "stack-data",
+      "version": "0.6.3"
+    },
+    {
+      "name": "sympy",
+      "version": "1.9"
+    },
+    {
+      "name": "systemd-python",
+      "version": "234"
+    },
+    {
+      "name": "tables",
+      "version": "3.10.1"
+    },
+    {
+      "name": "tenacity",
+      "version": "9.1.4"
+    },
+    {
+      "name": "terminado",
+      "version": "0.18.1"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0"
+    },
+    {
+      "name": "tinycss2",
+      "version": "1.4.0"
+    },
+    {
+      "name": "tomli",
+      "version": "2.4.1"
+    },
+    {
+      "name": "tornado",
+      "version": "6.5.6"
+    },
+    {
+      "name": "traitlets",
+      "version": "5.15.0"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.2"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.15.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.2"
+    },
+    {
+      "name": "ubuntu-advantage-tools",
+      "version": "8001"
+    },
+    {
+      "name": "ubuntu-drivers-common",
+      "version": "0.0.0"
+    },
+    {
+      "name": "ufoLib2",
+      "version": "0.13.1"
+    },
+    {
+      "name": "unicodedata2",
+      "version": "14.0.0"
+    },
+    {
+      "name": "uri-template",
+      "version": "1.3.0"
+    },
+    {
+      "name": "urllib3",
+      "version": "1.26.5"
+    },
+    {
+      "name": "urwid",
+      "version": "2.1.2"
+    },
+    {
+      "name": "wadllib",
+      "version": "1.3.6"
+    },
+    {
+      "name": "wcwidth",
+      "version": "0.7.0"
+    },
+    {
+      "name": "webcolors",
+      "version": "25.10.0"
+    },
+    {
+      "name": "webencodings",
+      "version": "0.5.1"
+    },
+    {
+      "name": "websocket-client",
+      "version": "1.9.0"
+    },
+    {
+      "name": "websockets",
+      "version": "16.0"
+    },
+    {
+      "name": "wheel",
+      "version": "0.47.0"
+    },
+    {
+      "name": "wheel",
+      "version": "0.37.1"
+    },
+    {
+      "name": "widgetsnbextension",
+      "version": "4.0.15"
+    },
+    {
+      "name": "xdg",
+      "version": "5"
+    },
+    {
+      "name": "xkit",
+      "version": "0.0.0"
+    },
+    {
+      "name": "zipp",
+      "version": "1.0.0"
+    }
+  ],
+  "platform": "Linux-5.15.185-tegra-aarch64-with-glibc2.35",
+  "power_mode": {
+    "returncode": 0,
+    "value": "NV Power Mode: 25W\n1"
+  },
+  "python_executable": "/home/uit/Projects/phys-mcp/.venv/bin/python",
+  "python_version": "3.10.12",
+  "source_sha256": {
+    "__init__.py": "84f3c4ab4bcaa8aa0f36606a12041d76a75098641ecaa9c6ef164006bf31a49e",
+    "adapters/__init__.py": "4ca7e90fc143a8676141701596cc0aaea62fc2a9ca1fd168d4bfe91fa11e4261",
+    "adapters/base_adapter.py": "5cbbd0697fb183c8e8877e24aaa77b6d5db33f3131000dc7f562060da923cfcf",
+    "adapters/chemical_adapter.py": "b568aa5aa0e5ee99da3030c940b00d1abab24bf3393112b52e947a5cdd0b0b9a",
+    "adapters/cortical_labs_adapter.py": "72dfcd424c2f511e03ddc2da69aa3f26d22e8f920d46fe81ea2da9dc2e32f4b8",
+    "adapters/edge_adapter.py": "f0ac3a83f6a48b48ee33e77a22f098c5bf63cd052d68926433122aa79d7bd158",
+    "adapters/fault_injecting_adapter.py": "7e51fe96d6b1de87b7ddbb20456031bc30f0a746aefb67bf88928634d176a598",
+    "adapters/remote_edge_adapter.py": "86824ab172a1c996fcaecc36de19ffc4f4ca54b3a03e01028cabba649bb0c888",
+    "adapters/wetware_adapter.py": "0ad7e529da53861c81a82f9c1aa2844a9d52461557a076f584e06105ef55e5ea",
+    "agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agent/gemini_agent.py": "56093db0c8122f46c07ecd8edd1dd4f3ab7cb0c2fd4a7533dcf1a590e41da6b1",
+    "agent/ollama_agent.py": "79b6e5e362c82191e6c1893257ca5b20fbf76fafee2c0acb9c9800a957ede976",
+    "backends/cortical/cl_client.py": "d278ca0a8ad8204af864db4746d21422cf6427ddcca63513f952c4770359feb9",
+    "core/__init__.py": "84f3c4ab4bcaa8aa0f36606a12041d76a75098641ecaa9c6ef164006bf31a49e",
+    "core/matcher.py": "a507fde04bfe0b9d17327fd3b3b19d5ed036edea174e88ec468fdc7aa3ad745f",
+    "core/orchestrator.py": "a62e8dd3570cad2ee4719d45963fe88070a1b0d10e2cd9649be52f4b5f8d9f71",
+    "core/task_model.py": "ed43bdb08dd8e8ea6ed3695360e11ed8e728726a801e97dfc9890d04f0d4f1cd",
+    "core/twin_registry.py": "36baceaaee1df7801f50efb4166fc17972ca607e032407e7696f1cdb89e351c1",
+    "demos/__init__.py": "d0eb6a3cd348dbc766468334c626c7ad505cd923224c83c9b2fe549bad7ccf91",
+    "demos/common.py": "9d6e4efd1aeda2c35f5dbdbe1e4f8ddc586bbbc4a219ff6271f36a14251c26e3",
+    "demos/demo_cortical_labs_adapter.py": "69d347f9d8da3b744bcc2bfaf6cce29d374f509d883c7c1ce7410dffcf187f79",
+    "demos/demo_discovery_and_matching.py": "d0cebafb6bf285e02725ca659c8039b4039dc52ff3b11b1b647fe4a420a070bb",
+    "demos/demo_fallback_and_recalibration.py": "7a57788ca203002b90eddfeafed05d270c7f85be003a45212702acf06365a3e9",
+    "demos/demo_invocation_and_telemetry.py": "f0b812f16d9c29e050b82fada6578a7184652834e687e130d549335b58b4dd74",
+    "descriptors/__init__.py": "84f3c4ab4bcaa8aa0f36606a12041d76a75098641ecaa9c6ef164006bf31a49e",
+    "descriptors/capability_schema.py": "f2c35aef39d1b8ce6fa47cf63a6b37d3524a6e79cc808c927c15794fb8edb823",
+    "evaluation/__init__.py": "4b8a0aed470cbad89dacdc0136a7cc4ae25813e23495366d911fac51c594705a",
+    "evaluation/common.py": "a49a84ce5a85222b36f01cc82d73e7f5e449fc0da719a7507d7a4401c10324eb",
+    "evaluation/create_embedded_edge_report_pdf.py": "0bb641961f4fbb87b533947c4def5f6112164cdcde8ceb30a5b92c47c875f779",
+    "evaluation/embedded_worker.py": "637b84e70c9a73f22b139da0d87d31a112737f49119dc74bd894bc6191591c6b",
+    "evaluation/evaluate_cortical_runtime.py": "271a183df80d6f8098cbf3ea79bcfd2fe37b3a1de00869e24be60ee15d4d8fa7",
+    "evaluation/evaluate_externalized_backend.py": "d3749e2c9b21049d557985c5f051d545098e17f516828fef525737b32da09dd9",
+    "evaluation/evaluate_failure_campaign.py": "0c46e414a03390c2710e20b5974a0cb7309784bdcf53ccb917339c24c06c6ada",
+    "evaluation/evaluate_gemini_agent.py": "a701592e77766644e34753735a48cb0b41dbdade72cab8dbbe8b2142d7d9d36c",
+    "evaluation/evaluate_matching.py": "d6c9c27e55f0101a8041cf4cf9c84b9da02581109b8241d913768e2b55840b4a",
+    "evaluation/evaluate_matching_baselines.py": "354d756e8e1f54041eef07f42321150c5fb14d367472420312d43c7471132881",
+    "evaluation/evaluate_overhead.py": "af23a00a359871b1f83f62a820c053d46078ba8d6fac05d7eb3a59502746be09",
+    "evaluation/evaluate_portability.py": "da15c07e73f5cde7fb5064cbc48f6b9ad28e48b25a07e11484da44d2810f5cc0",
+    "evaluation/evaluate_tegra_resources.py": "4c95708a8f3938ddf805e7789829eac3f8970a23463ef33ea896eb98edc8aeda",
+    "evaluation/plots.py": "786f2a092173f23894f683b60259b2e1cd0ffbca5219fc25348ea85aa926c1d3",
+    "evaluation/run_all_evaluations.py": "1ec8579afbeb865cd7dcef94b4cbd4564226ff446c8a94d56a6315116d52be97",
+    "remote/__init__.py": "f071c4a737a9f3d9260806c1ea47c9ca8efda19f3d1baf769d8686eb439ca581",
+    "remote/edge_service.py": "02946af25a927aca176caf207706a9c2d74503344e4e18bf5878d2ba9d775124",
+    "remote/service_controller.py": "2d9368b50473310fda1a5bff2e7b267779da15a5d55ceee8a411742c557114db",
+    "requirements.txt": "fcda5afb8fa2dab39dd172774b883ca8fb6011d2ad3fc702e43b9399a9559878",
+    "scripts/cl_smoketest.py": "0da47128cf92abbceaa82743503be706643d3b22341ae58d9096ae0ae50e4050",
+    "scripts/cl_stim_record_test.py": "02bc1bbbd656d64ef945510e022207271d4177024f3f32c17bfcfb9df33765f3",
+    "scripts/visualize_recording_h5.py": "fc9c0e335935d334901b617836755f95b591af6db82ea23e989a238ee60e2545",
+    "tests/conftest.py": "2cebf8cf9eaf35d3d27ccb7a97e0452703a1783ae7e0f88c62d2442cfa59bdfc",
+    "tests/test_cortical_labs_adapter.py": "e52db88e711420474e060e53f09bf38f6ecd358dff8feb76bf2bdb9541a3dc7b",
+    "tests/test_embedded_evaluation.py": "fe517a04bba0842ebb69811394c97fa751a60cca46e1d2bd08204a04bf40124e",
+    "tests/test_fullpaper_extensions.py": "0d6db467fa85442bc62f8a4e3815e8b63526bb15af2a2f2a35a64dc377c01d73",
+    "twins/__init__.py": "99a4485dcd7158caa44b8ec39d786e380413029943354a631d517cea1f623a7b",
+    "twins/chemical_twin.py": "e16b3fe0a4e974c3563d13fb2946437fb30e64bf732d6525db6500b11795080c",
+    "twins/edge_twin.py": "d074c735f551011daee544fdf5981b9adc613c02bf3443a3a4a873927ac3f013",
+    "twins/wetware_twin.py": "fd9a2b1d4207ecf36b82cdb1af099f49f4f79f9ce167fa8d714c40449a92912b"
+  },
+  "worker_environment_overrides": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  }
+}

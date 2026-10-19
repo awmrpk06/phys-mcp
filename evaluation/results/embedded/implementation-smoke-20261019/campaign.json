@@ -1,0 +1,74 @@
+{
+  "label": "implementation-smoke-exploratory-not-publication-data",
+  "schema_version": 1,
+  "trials": [
+    {
+      "backend": "edge",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "direct",
+      "profile": "edge-only",
+      "warmup": 2
+    },
+    {
+      "backend": "edge",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "orchestrated",
+      "profile": "edge-only",
+      "warmup": 2
+    },
+    {
+      "backend": "chemical",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "direct",
+      "warmup": 2
+    },
+    {
+      "backend": "chemical",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "orchestrated",
+      "warmup": 2
+    },
+    {
+      "backend": "wetware",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "direct",
+      "warmup": 2
+    },
+    {
+      "backend": "wetware",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "orchestrated",
+      "warmup": 2
+    },
+    {
+      "backend": "http",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "direct",
+      "warmup": 2
+    },
+    {
+      "backend": "http",
+      "idle_s": 0.25,
+      "iterations": 10,
+      "mode": "orchestrated",
+      "warmup": 2
+    },
+    {
+      "backend": "edge",
+      "idle_s": 0.25,
+      "iterations": 100,
+      "maintenance": "native",
+      "mode": "orchestrated",
+      "rate_hz": 100,
+      "selection": "capability",
+      "warmup": 0
+    }
+  ]
+}

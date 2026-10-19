@@ -1,0 +1,4 @@
+{"event": "ready", "monotonic_ns": 26350795507174, "pid": 42779, "registered_backends": ["chemical-backend", "edge-backend", "wetware-backend"]}
+{"event": "warmup_start", "monotonic_ns": 26350795629258}
+{"event": "measurement_start", "monotonic_ns": 26353893931236}
+{"event": "measurement_end", "monotonic_ns": 26359894355234, "completed_requests": 600}

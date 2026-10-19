@@ -1,0 +1,24 @@
+{
+  "allow_fallback": false,
+  "continuous_monitoring_required": false,
+  "direct_backend_id": "chemical-backend",
+  "human_supervision_available": false,
+  "latency_budget_ms": 15000.0,
+  "max_twin_age_ms": null,
+  "metadata": {
+    "input_level": 1.4
+  },
+  "min_confidence": 0.2,
+  "preferred_locality": null,
+  "preferred_output": "state_estimate",
+  "repeated_invocation_expected": false,
+  "required_input_modalities": [
+    "concentration"
+  ],
+  "required_telemetry_fields": [],
+  "reset_free_preferred": false,
+  "stochasticity_tolerance": 0.5,
+  "summary": "Embedded control-plane measurement.",
+  "task_id": "embedded-trial",
+  "task_kind": "sensing"
+}

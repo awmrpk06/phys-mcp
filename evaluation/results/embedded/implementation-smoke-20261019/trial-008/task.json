@@ -1,0 +1,29 @@
+{
+  "allow_fallback": false,
+  "continuous_monitoring_required": false,
+  "direct_backend_id": null,
+  "human_supervision_available": false,
+  "latency_budget_ms": 20.0,
+  "max_twin_age_ms": null,
+  "metadata": {
+    "input_vector": [
+      0.1,
+      0.3,
+      0.5,
+      0.7
+    ]
+  },
+  "min_confidence": 0.2,
+  "preferred_locality": "edge",
+  "preferred_output": "score",
+  "repeated_invocation_expected": false,
+  "required_input_modalities": [
+    "digital_vector"
+  ],
+  "required_telemetry_fields": [],
+  "reset_free_preferred": false,
+  "stochasticity_tolerance": 0.5,
+  "summary": "Embedded control-plane measurement.",
+  "task_id": "embedded-trial",
+  "task_kind": "classification"
+}

@@ -1,0 +1,15 @@
+{
+  "backend": "edge",
+  "base_url": null,
+  "baseline_s": 3,
+  "duration_s": 6,
+  "idle_s": 0.0,
+  "iterations": null,
+  "maintenance": "reset_recalibrate",
+  "mode": "orchestrated",
+  "profile": "standard",
+  "rate_hz": 100,
+  "seed": 21,
+  "selection": "directed",
+  "warmup": 200
+}

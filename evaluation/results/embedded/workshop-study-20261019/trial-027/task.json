@@ -1,0 +1,28 @@
+{
+  "allow_fallback": false,
+  "continuous_monitoring_required": true,
+  "direct_backend_id": "wetware-backend",
+  "human_supervision_available": true,
+  "latency_budget_ms": 120.0,
+  "max_twin_age_ms": null,
+  "metadata": {
+    "observation_window_ms": 140.0,
+    "stimulation_strength": 0.65
+  },
+  "min_confidence": 0.2,
+  "preferred_locality": null,
+  "preferred_output": "telemetry_aware_result",
+  "repeated_invocation_expected": false,
+  "required_input_modalities": [
+    "spikes"
+  ],
+  "required_telemetry_fields": [
+    "health_status",
+    "drift_score"
+  ],
+  "reset_free_preferred": false,
+  "stochasticity_tolerance": 0.5,
+  "summary": "Embedded control-plane measurement.",
+  "task_id": "embedded-trial",
+  "task_kind": "temporal_inference"
+}

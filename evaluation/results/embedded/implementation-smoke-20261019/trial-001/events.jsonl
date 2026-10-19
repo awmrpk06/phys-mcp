@@ -1,0 +1,4 @@
+{"event": "ready", "monotonic_ns": 24393042820779, "pid": 11171, "registered_backends": ["edge-backend"]}
+{"event": "warmup_start", "monotonic_ns": 24393293476292}
+{"event": "measurement_start", "monotonic_ns": 24393295149912}
+{"event": "measurement_end", "monotonic_ns": 24393300930765, "completed_requests": 10}

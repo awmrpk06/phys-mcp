@@ -1,0 +1,75 @@
+{
+  "launch_to_ready_ms": 753.468615,
+  "process_sampling": false,
+  "returncode": 0,
+  "sensors_enabled": false,
+  "summary": {
+    "baseline_adjusted_power": {
+      "active_minus_bracketing_idle_w": null,
+      "interpretation": "Whole-platform active minus ready-worker idle; includes backend and instrumentation, not isolated control-plane power.",
+      "minimum_coverage_fraction": 0.9,
+      "usable": false
+    },
+    "latency_mean_ms": 0.140676545,
+    "latency_median_ms": 0.137573,
+    "latency_p95_ms": 0.162533,
+    "latency_p99_ms": 0.177669,
+    "phases": {
+      "idle_after": {
+        "power": {
+          "coverage_fraction": 0.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.0,
+          "platform_energy_j_over_observed_interval": null,
+          "platform_mean_power_w": null
+        },
+        "processes": {}
+      },
+      "idle_before": {
+        "power": {
+          "coverage_fraction": 0.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.0,
+          "platform_energy_j_over_observed_interval": null,
+          "platform_mean_power_w": null
+        },
+        "processes": {}
+      },
+      "measurement": {
+        "power": {
+          "coverage_fraction": 0.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.0,
+          "platform_energy_j_over_observed_interval": null,
+          "platform_mean_power_w": null
+        },
+        "processes": {}
+      },
+      "ready_idle": {
+        "power": {
+          "coverage_fraction": 0.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.0,
+          "platform_energy_j_over_observed_interval": null,
+          "platform_mean_power_w": null
+        },
+        "processes": {}
+      }
+    },
+    "power": {
+      "coverage_fraction": 0.0,
+      "idle_subtracted": false,
+      "observed_interval_s": 0.0,
+      "platform_energy_j_over_observed_interval": null,
+      "platform_mean_power_w": null
+    },
+    "power_sample_count": 0,
+    "process_peak_rss_kib": 65172,
+    "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+    "request_count": 2000,
+    "sensor_sample_count": 0,
+    "skipped_releases": 0,
+    "successful_requests": 2000
+  },
+  "timed_out": false
+}

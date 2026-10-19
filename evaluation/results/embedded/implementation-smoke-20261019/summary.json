@@ -1,0 +1,241 @@
+{
+  "all_trials_passed": true,
+  "interpretation": "Exploratory unless separately frozen and approved as a confirmatory campaign.",
+  "legacy_artifacts_unchanged": true,
+  "trials": [
+    {
+      "launch_to_ready_ms": 744.198295,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 0.1990557,
+        "latency_median_ms": 0.192214,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.00306448,
+          "platform_energy_j_over_observed_interval": 0.016341113682647086,
+          "platform_mean_power_w": 5.332426278731493
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 64636,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 740.429025,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 0.3199013,
+        "latency_median_ms": 0.31108199999999997,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.00428103,
+          "platform_energy_j_over_observed_interval": 0.02252511013083405,
+          "platform_mean_power_w": 5.261609970225401
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 65136,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 740.314557,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 2.6912653,
+        "latency_median_ms": 2.6994925,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.028138035,
+          "platform_energy_j_over_observed_interval": 0.1467923738479724,
+          "platform_mean_power_w": 5.21686655972858
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 65020,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 740.555301,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 3.0729444,
+        "latency_median_ms": 3.0709280000000003,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.032056494,
+          "platform_energy_j_over_observed_interval": 0.1672740456311642,
+          "platform_mean_power_w": 5.218101693565248
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 65008,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 743.75812,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 0.1607283,
+        "latency_median_ms": 0.157349,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.002638067,
+          "platform_energy_j_over_observed_interval": 0.013905129524178614,
+          "platform_mean_power_w": 5.270953893202338
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 65016,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 743.282617,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 0.4303622,
+        "latency_median_ms": 0.4269255,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.005436394,
+          "platform_energy_j_over_observed_interval": 0.028444933743680383,
+          "platform_mean_power_w": 5.232316447939643
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 65024,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 746.61725,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 5.0103781,
+        "latency_median_ms": 4.874809,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 0.6188244671699368,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.049170919,
+          "platform_energy_j_over_observed_interval": 0.2560269819857725,
+          "platform_mean_power_w": 5.206878113987915
+        },
+        "power_sample_count": 4,
+        "process_peak_rss_kib": 65020,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 4,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 742.749704,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 8.2937705,
+        "latency_median_ms": 8.110718,
+        "latency_p95_ms": null,
+        "latency_p99_ms": null,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.111721105,
+          "platform_energy_j_over_observed_interval": 0.5808058733312302,
+          "platform_mean_power_w": 5.198712215845253
+        },
+        "power_sample_count": 5,
+        "process_peak_rss_kib": 65016,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 10,
+        "sensor_sample_count": 5,
+        "skipped_releases": 0,
+        "successful_requests": 10
+      },
+      "timed_out": false
+    },
+    {
+      "launch_to_ready_ms": 739.944751,
+      "returncode": 0,
+      "sensors_enabled": true,
+      "summary": {
+        "latency_mean_ms": 0.86071602,
+        "latency_median_ms": 0.863083,
+        "latency_p95_ms": 0.961086,
+        "latency_p99_ms": 1.037633,
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 0.991188377,
+          "platform_energy_j_over_observed_interval": 4.843142859042987,
+          "platform_mean_power_w": 4.886198195444525
+        },
+        "power_sample_count": 8,
+        "process_peak_rss_kib": 65020,
+        "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+        "request_count": 100,
+        "sensor_sample_count": 8,
+        "skipped_releases": 0,
+        "successful_requests": 100
+      },
+      "timed_out": false
+    }
+  ]
+}

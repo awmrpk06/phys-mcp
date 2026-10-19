@@ -1,0 +1,6 @@
+{
+  "interval_ms": 250,
+  "process": false,
+  "tegrastats": false,
+  "timeout_s": 90.0
+}

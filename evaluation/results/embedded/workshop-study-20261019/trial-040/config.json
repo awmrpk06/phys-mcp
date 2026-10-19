@@ -1,0 +1,15 @@
+{
+  "backend": "http",
+  "base_url": "http://127.0.0.1:59275",
+  "baseline_s": 0.0,
+  "duration_s": null,
+  "idle_s": 0.0,
+  "iterations": 300,
+  "maintenance": "reset_recalibrate",
+  "mode": "direct",
+  "profile": "standard",
+  "rate_hz": null,
+  "seed": 19,
+  "selection": "directed",
+  "warmup": 100
+}

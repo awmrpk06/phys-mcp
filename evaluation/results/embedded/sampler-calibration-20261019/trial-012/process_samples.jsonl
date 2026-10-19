@@ -1,0 +1,8 @@
+{"monotonic_ns": 25092300950507, "pid": 12225, "role": "worker", "rss_kib": 8, "peak_rss_kib": 8, "cpu_time_s": 0.0}
+{"monotonic_ns": 25092301419258, "pid": 12147, "role": "controller", "rss_kib": 32964, "peak_rss_kib": 32964, "cpu_time_s": 2.16}
+{"monotonic_ns": 25093305239371, "pid": 12225, "role": "worker", "rss_kib": 65100, "peak_rss_kib": 65100, "cpu_time_s": 0.99}
+{"monotonic_ns": 25093305797437, "pid": 12147, "role": "controller", "rss_kib": 32964, "peak_rss_kib": 32964, "cpu_time_s": 2.17}
+{"monotonic_ns": 25094310064795, "pid": 12225, "role": "worker", "rss_kib": 65100, "peak_rss_kib": 65100, "cpu_time_s": 1.99}
+{"monotonic_ns": 25094310625453, "pid": 12147, "role": "controller", "rss_kib": 32964, "peak_rss_kib": 32964, "cpu_time_s": 2.17}
+{"monotonic_ns": 25095315095025, "pid": 12225, "role": "worker", "rss_kib": 65100, "peak_rss_kib": 65100, "cpu_time_s": 2.99}
+{"monotonic_ns": 25095315654371, "pid": 12147, "role": "controller", "rss_kib": 32964, "peak_rss_kib": 32964, "cpu_time_s": 2.17}

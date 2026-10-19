@@ -115,6 +115,35 @@ class AgentResult:
     summary: str
 
 
+def to_jsonable(value: Any) -> Any:
+    """Recursively convert result payloads into plain JSON-compatible values."""
+    if value is None or isinstance(value, (str, int, float, bool)):
+        return value
+    if isinstance(value, Path):
+        return str(value)
+    if isinstance(value, dict):
+        return {str(key): to_jsonable(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple, set)):
+        return [to_jsonable(item) for item in value]
+    if hasattr(value, "model_dump"):
+        return to_jsonable(value.model_dump())
+    if hasattr(value, "tolist"):
+        try:
+            return to_jsonable(value.tolist())
+        except (TypeError, ValueError):
+            pass
+    if hasattr(value, "item"):
+        try:
+            return to_jsonable(value.item())
+        except (TypeError, ValueError):
+            pass
+    return str(value)
+
+
+def json_text(value: Any, *, indent: int = 2) -> str:
+    return json.dumps(to_jsonable(value), indent=indent)
+
+
 class OllamaClient:
     def __init__(
         self,
@@ -198,7 +227,7 @@ class PhysMCPOllamaAgent:
         invocation = run_result.invocation
         payload = invocation.output_payload if invocation is not None else {}
 
-        return {
+        return to_jsonable({
             "success": run_result.success,
             "selected_backend": run_result.decision.selected_backend_id,
             "used_fallback": run_result.decision.used_fallback,
@@ -211,7 +240,7 @@ class PhysMCPOllamaAgent:
             "output_payload": payload,
             "telemetry_before": run_result.telemetry_before or {},
             "telemetry_after": run_result.telemetry_after or {},
-        }
+        })
 
     def summarize(
         self,
@@ -221,8 +250,8 @@ class PhysMCPOllamaAgent:
     ) -> str:
         prompt = SUMMARY_PROMPT_TEMPLATE.format(
             user_goal=user_goal,
-            plan_json=json.dumps(plan, indent=2),
-            result_json=json.dumps(run_result, indent=2),
+            plan_json=json_text(plan),
+            result_json=json_text(run_result),
         )
         return self.llm.generate(prompt, temperature=0.2)
 
@@ -240,11 +269,12 @@ class PhysMCPOllamaAgent:
 
 
 def main() -> None:
-    user_goal = (
+    default_user_goal = (
         "Probe whether the cultured network produces a stable response under a "
         "candidate stimulation pattern. Prefer Cortical Labs. Use a short "
         "observation window and do not enable fallback."
     )
+    user_goal = " ".join(sys.argv[1:]).strip() or default_user_goal
 
     agent = PhysMCPOllamaAgent()
     health = agent.llm.healthcheck()
@@ -252,7 +282,7 @@ def main() -> None:
     print("=" * 80)
     print("Ollama health check")
     print("=" * 80)
-    print(json.dumps(health, indent=2)[:3000])
+    print(json_text(health)[:3000])
 
     result = agent.run(user_goal)
 
@@ -260,11 +290,11 @@ def main() -> None:
     print("Ollama phys-MCP agent result")
     print("=" * 80)
     print("\nPlan:")
-    print(json.dumps(result.plan, indent=2))
+    print(json_text(result.plan))
     print("\nDiscovered resources:")
-    print(json.dumps(result.resources, indent=2)[:4000])
+    print(json_text(result.resources)[:4000])
     print("\nExecution result:")
-    print(json.dumps(result.run_result, indent=2))
+    print(json_text(result.run_result))
     print("\nSummary:")
     print(result.summary)
 

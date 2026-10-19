@@ -1,0 +1,3 @@
+mistune==3.2.1
+reportlab
+pypdf

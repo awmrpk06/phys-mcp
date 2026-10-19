@@ -1,0 +1,943 @@
+{
+  "label": "repeated-embedded-feasibility-working-paper",
+  "purpose": "workshop-feasibility",
+  "schema_version": 1,
+  "trials": [
+    {
+      "backend": "edge",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-edge-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-edge-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-edge-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-edge-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-edge-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-edge-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-edge-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-edge-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-edge-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-edge-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-edge-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-edge-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-chemical-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-chemical-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-chemical-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-chemical-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-chemical-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-chemical-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-chemical-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-chemical-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-chemical-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-chemical-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-chemical-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "chemical",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-chemical-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-wetware-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-wetware-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-wetware-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-wetware-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-wetware-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-wetware-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-wetware-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-wetware-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-wetware-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-wetware-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "orchestrated",
+      "iterations": 2000,
+      "mode": "orchestrated",
+      "pair_id": "latency-wetware-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "wetware",
+      "condition": "direct",
+      "iterations": 2000,
+      "mode": "direct",
+      "pair_id": "latency-wetware-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "http",
+      "condition": "direct",
+      "iterations": 300,
+      "mode": "direct",
+      "pair_id": "latency-http-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "orchestrated",
+      "iterations": 300,
+      "mode": "orchestrated",
+      "pair_id": "latency-http-00",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "orchestrated",
+      "iterations": 300,
+      "mode": "orchestrated",
+      "pair_id": "latency-http-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "direct",
+      "iterations": 300,
+      "mode": "direct",
+      "pair_id": "latency-http-01",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "direct",
+      "iterations": 300,
+      "mode": "direct",
+      "pair_id": "latency-http-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "orchestrated",
+      "iterations": 300,
+      "mode": "orchestrated",
+      "pair_id": "latency-http-02",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "orchestrated",
+      "iterations": 300,
+      "mode": "orchestrated",
+      "pair_id": "latency-http-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "direct",
+      "iterations": 300,
+      "mode": "direct",
+      "pair_id": "latency-http-03",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "direct",
+      "iterations": 300,
+      "mode": "direct",
+      "pair_id": "latency-http-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "orchestrated",
+      "iterations": 300,
+      "mode": "orchestrated",
+      "pair_id": "latency-http-04",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "orchestrated",
+      "iterations": 300,
+      "mode": "orchestrated",
+      "pair_id": "latency-http-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "http",
+      "condition": "direct",
+      "iterations": 300,
+      "mode": "direct",
+      "pair_id": "latency-http-05",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 100
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "direct",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "direct",
+      "pair_id": "resources-edge-00",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "orchestrated",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "resources-edge-00",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "orchestrated",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "resources-edge-01",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "direct",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "direct",
+      "pair_id": "resources-edge-01",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "direct",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "direct",
+      "pair_id": "resources-edge-02",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "orchestrated",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "resources-edge-02",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "orchestrated",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "resources-edge-03",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "direct",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "direct",
+      "pair_id": "resources-edge-03",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "direct",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "direct",
+      "pair_id": "resources-edge-04",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "orchestrated",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "resources-edge-04",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "orchestrated",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "resources-edge-05",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "backend": "edge",
+      "baseline_s": 3,
+      "condition": "direct",
+      "duration_s": 6,
+      "iterations": null,
+      "mode": "direct",
+      "pair_id": "resources-edge-05",
+      "profile": "standard",
+      "rate_hz": 100,
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 24,
+      "warmup": 200
+    }
+  ]
+}

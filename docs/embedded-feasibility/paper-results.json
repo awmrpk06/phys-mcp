@@ -1,0 +1,384 @@
+{
+  "calibration": {
+    "comparisons": {
+      "1000ms": {
+        "excluded_pairs": [],
+        "mean_latency_difference_ms": {
+          "ci95": [
+            -0.004079342663410853,
+            0.0014305340022275385
+          ],
+          "mean": -0.001324404330591657,
+          "paired_blocks": 6
+        },
+        "mean_latency_difference_percent": {
+          "ci95": [
+            -1.0156612304551764,
+            0.35756425703151573
+          ],
+          "mean": -0.3290484867118304,
+          "paired_blocks": 6
+        },
+        "pairs": [
+          {
+            "delta_mean_ms": -0.0015180857030992478,
+            "delta_mean_percent": -0.38005196695026777,
+            "pair_id": "block-000"
+          },
+          {
+            "delta_mean_ms": 0.0025167186636820826,
+            "delta_mean_percent": 0.6309831279807554,
+            "pair_id": "block-001"
+          },
+          {
+            "delta_mean_ms": -0.004583058338914314,
+            "delta_mean_percent": -1.1385129460755428,
+            "pair_id": "block-002"
+          },
+          {
+            "delta_mean_ms": -0.0038704335817330016,
+            "delta_mean_percent": -0.9636788261136786,
+            "pair_id": "block-003"
+          },
+          {
+            "delta_mean_ms": -0.0005905275276235633,
+            "delta_mean_percent": -0.1479389114586116,
+            "pair_id": "block-004"
+          },
+          {
+            "delta_mean_ms": 9.896050413810142e-05,
+            "delta_mean_percent": 0.02490860234636294,
+            "pair_id": "block-005"
+          }
+        ]
+      },
+      "250ms": {
+        "excluded_pairs": [],
+        "mean_latency_difference_ms": {
+          "ci95": [
+            -0.0007503384177953563,
+            0.0024194455003625163
+          ],
+          "mean": 0.00083455354128358,
+          "paired_blocks": 6
+        },
+        "mean_latency_difference_percent": {
+          "ci95": [
+            -0.1860515967846387,
+            0.6013738984966269
+          ],
+          "mean": 0.2076611508559941,
+          "paired_blocks": 6
+        },
+        "pairs": [
+          {
+            "delta_mean_ms": 5.5880479420733487e-05,
+            "delta_mean_percent": 0.013989648986623138,
+            "pair_id": "block-000"
+          },
+          {
+            "delta_mean_ms": 0.0005376842358518763,
+            "delta_mean_percent": 0.13480635952665132,
+            "pair_id": "block-001"
+          },
+          {
+            "delta_mean_ms": 0.0038490719729122325,
+            "delta_mean_percent": 0.9561777196524179,
+            "pair_id": "block-002"
+          },
+          {
+            "delta_mean_ms": 0.00014098116894861734,
+            "delta_mean_percent": 0.03510215703939057,
+            "pair_id": "block-003"
+          },
+          {
+            "delta_mean_ms": 0.0006394442855284233,
+            "delta_mean_percent": 0.1601935339410776,
+            "pair_id": "block-004"
+          },
+          {
+            "delta_mean_ms": -0.00021574089496040338,
+            "delta_mean_percent": -0.054302514010196035,
+            "pair_id": "block-005"
+          }
+        ]
+      }
+    },
+    "method": "Paired block differences; two-sided Student t intervals assuming independent blocks. Exploratory, not equivalence proof.",
+    "scope": "Standard edge orchestrator, unpaced duration trials, fixed maintenance. Both platform and process sampling vary together; timeout polling and per-request logs remain enabled."
+  },
+  "calibration_manifest_sha256": "d1f42ada58ce448dc51a498da37e424209afdaaaa89344ef4a006177c65e054a",
+  "evaluated_git_revision": "d836cedff1306a1f640059ce4a5abbed0eb07b89",
+  "latency": [
+    {
+      "added_overhead_ms": {
+        "ci95": [
+          0.2379675361481313,
+          0.23927078318520204
+        ],
+        "mean": 0.23861915966666666,
+        "paired_blocks": 6
+      },
+      "backend": "edge",
+      "direct_mean_ms": 0.16194340908333332,
+      "orchestrated_mean_ms": 0.40056256875,
+      "pairs": {
+        "latency-edge-00": {
+          "direct": 0.1641224745,
+          "orchestrated": 0.4031946625
+        },
+        "latency-edge-01": {
+          "direct": 0.1629589125,
+          "orchestrated": 0.4009908835
+        },
+        "latency-edge-02": {
+          "direct": 0.1607402745,
+          "orchestrated": 0.3990417965
+        },
+        "latency-edge-03": {
+          "direct": 0.1619552845,
+          "orchestrated": 0.399896306
+        },
+        "latency-edge-04": {
+          "direct": 0.1608547945,
+          "orchestrated": 0.399740102
+        },
+        "latency-edge-05": {
+          "direct": 0.161028714,
+          "orchestrated": 0.400511662
+        }
+      }
+    },
+    {
+      "added_overhead_ms": {
+        "ci95": [
+          0.36083181064527886,
+          0.3684702765213879
+        ],
+        "mean": 0.3646510435833334,
+        "paired_blocks": 6
+      },
+      "backend": "chemical",
+      "direct_mean_ms": 2.6546877016666666,
+      "orchestrated_mean_ms": 3.01933874525,
+      "pairs": {
+        "latency-chemical-00": {
+          "direct": 2.646802098,
+          "orchestrated": 3.0157335025
+        },
+        "latency-chemical-01": {
+          "direct": 2.6472145255,
+          "orchestrated": 3.007869542
+        },
+        "latency-chemical-02": {
+          "direct": 2.6644328355,
+          "orchestrated": 3.0314319735
+        },
+        "latency-chemical-03": {
+          "direct": 2.6556380255,
+          "orchestrated": 3.022304304
+        },
+        "latency-chemical-04": {
+          "direct": 2.6528522105,
+          "orchestrated": 3.0175834245
+        },
+        "latency-chemical-05": {
+          "direct": 2.661186515,
+          "orchestrated": 3.021109725
+        }
+      }
+    },
+    {
+      "added_overhead_ms": {
+        "ci95": [
+          0.25826108142965976,
+          0.2635505430703402
+        ],
+        "mean": 0.26090581225,
+        "paired_blocks": 6
+      },
+      "backend": "wetware",
+      "direct_mean_ms": 0.13916147058333334,
+      "orchestrated_mean_ms": 0.4000672828333333,
+      "pairs": {
+        "latency-wetware-00": {
+          "direct": 0.137520156,
+          "orchestrated": 0.3997296545
+        },
+        "latency-wetware-01": {
+          "direct": 0.1397423775,
+          "orchestrated": 0.400369707
+        },
+        "latency-wetware-02": {
+          "direct": 0.140676545,
+          "orchestrated": 0.400525143
+        },
+        "latency-wetware-03": {
+          "direct": 0.136277907,
+          "orchestrated": 0.4010149685
+        },
+        "latency-wetware-04": {
+          "direct": 0.13906593,
+          "orchestrated": 0.3999383015
+        },
+        "latency-wetware-05": {
+          "direct": 0.141685908,
+          "orchestrated": 0.3988259225
+        }
+      }
+    },
+    {
+      "added_overhead_ms": {
+        "ci95": [
+          3.1316157577808044,
+          3.706937053330307
+        ],
+        "mean": 3.419276405555556,
+        "paired_blocks": 6
+      },
+      "backend": "http",
+      "direct_mean_ms": 4.96689349,
+      "orchestrated_mean_ms": 8.386169895555556,
+      "pairs": {
+        "latency-http-00": {
+          "direct": 4.914529413333334,
+          "orchestrated": 8.180099426666667
+        },
+        "latency-http-01": {
+          "direct": 5.01476917,
+          "orchestrated": 8.334416536666666
+        },
+        "latency-http-02": {
+          "direct": 4.802775493333334,
+          "orchestrated": 8.73150539
+        },
+        "latency-http-03": {
+          "direct": 5.061920066666667,
+          "orchestrated": 8.209335673333333
+        },
+        "latency-http-04": {
+          "direct": 4.8433567066666665,
+          "orchestrated": 8.335904723333334
+        },
+        "latency-http-05": {
+          "direct": 5.16401009,
+          "orchestrated": 8.525757623333334
+        }
+      }
+    }
+  ],
+  "latency_failed_trials": 0,
+  "latency_requests": 75600,
+  "latency_successes": 75600,
+  "missed_releases": 0,
+  "paired_incremental_platform_power_w": {
+    "ci95": [
+      -0.06245125470904,
+      0.15035522001144377
+    ],
+    "excluded_pairs": [],
+    "mean": 0.04395198265120189,
+    "paired_blocks": 6,
+    "pairs": {
+      "resources-edge-00": {
+        "direct": -0.009754991139908853,
+        "orchestrated": 0.002612036636143955
+      },
+      "resources-edge-01": {
+        "direct": -0.017831245029909404,
+        "orchestrated": 0.00989713522774327
+      },
+      "resources-edge-02": {
+        "direct": -0.028578327169882733,
+        "orchestrated": 0.006187250441509917
+      },
+      "resources-edge-03": {
+        "direct": -0.22302636043336577,
+        "orchestrated": 0.01622058220296463
+      },
+      "resources-edge-04": {
+        "direct": -0.03745677009042847,
+        "orchestrated": -0.09694629471293492
+      },
+      "resources-edge-05": {
+        "direct": 0.00018984256036347347,
+        "orchestrated": 0.009283334808652732
+      }
+    }
+  },
+  "provenance": {
+    "device_model": "NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super",
+    "l4t_release": "# R36 (release), REVISION: 5.0, GCID: 43688277, BOARD: generic, EABI: aarch64, DATE: Fri Jan 16 03:50:45 UTC 2026\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia",
+    "memory": "MemTotal:        7789952 kB\nMemFree:         1043684 kB\nMemAvailable:    2379372 kB\nBuffers:          117176 kB\nCached:          1278528 kB\nSwapCached:           64 kB\nActive:          1103164 kB\nInactive:        4850396 kB\nActive(anon):     101820 kB\nInactive(anon):  4519764 kB\nActive(file):    1001344 kB\nInactive(file):   330632 kB\nUnevictable:       35896 kB\nMlocked:               0 kB\nSwapTotal:       3894960 kB\nSwapFree:        3788720 kB\nDirty:               200 kB\nWriteback:            40 kB\nAnonPages:       4446664 kB\nMapped:           458512 kB\nShmem:             27892 kB\nKReclaimable:     206732 kB\nSlab:             326156 kB\nSReclaimable:     206732 kB\nSUnreclaim:       119424 kB\nKernelStack:       12960 kB\nPageTables:        66940 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     7789936 kB\nCommitted_AS:    9954600 kB\nVmallocTotal:   133143592960 kB\nVmallocUsed:       75076 kB\nVmallocChunk:          0 kB\nPercpu:             5544 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:   1386496 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nCmaTotal:         262144 kB\nCmaFree:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB",
+    "online_cpus": 6,
+    "platform": "Linux-5.15.185-tegra-aarch64-with-glibc2.35",
+    "power_mode": {
+      "returncode": 0,
+      "value": "NV Power Mode: 25W\n1"
+    },
+    "python_version": "3.10.12"
+  },
+  "resource_failed_trials": 0,
+  "resource_requests": 7200,
+  "resource_successes": 7200,
+  "resources": [
+    {
+      "active_cpu_percent_one_core": [
+        5.769619625297114,
+        5.769635325033656,
+        5.588380612638625,
+        5.7693509371137,
+        5.5202196891628095,
+        6.307353563381526
+      ],
+      "cpu_mean_percent_one_core": 5.787426625437905,
+      "mode": "direct",
+      "peak_rss_max_mib": 63.72265625,
+      "peak_rss_mib": [
+        63.72265625,
+        63.65625,
+        63.703125,
+        63.71875,
+        63.71484375,
+        63.703125
+      ],
+      "peak_rss_min_mib": 63.65625,
+      "startup_mean_ms": 763.1313071666666
+    },
+    {
+      "active_cpu_percent_one_core": [
+        9.997018335848992,
+        10.178808144949642,
+        10.174467877830494,
+        10.006246131739436,
+        10.33840835616205,
+        9.828012071604462
+      ],
+      "cpu_mean_percent_one_core": 10.087160153022513,
+      "mode": "orchestrated",
+      "peak_rss_max_mib": 63.65625,
+      "peak_rss_mib": [
+        63.65625,
+        63.63671875,
+        63.64453125,
+        63.65625,
+        63.6484375,
+        63.65234375
+      ],
+      "peak_rss_min_mib": 63.63671875,
+      "startup_mean_ms": 752.8458641666666
+    }
+  ],
+  "runtime_source_unchanged": true,
+  "study_manifest_sha256": "7b7836e0b80c5e34de6ec5102738eec90bc0b8c8297b3ab75ec93f80de044dad",
+  "verification": {
+    "calibration": {
+      "trial_count": 18,
+      "verified_files": 179
+    },
+    "study": {
+      "trial_count": 60,
+      "verified_files": 557
+    }
+  }
+}

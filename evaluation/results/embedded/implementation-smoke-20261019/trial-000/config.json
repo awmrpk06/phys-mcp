@@ -1,0 +1,13 @@
+{
+  "backend": "edge",
+  "base_url": null,
+  "idle_s": 0.25,
+  "iterations": 10,
+  "maintenance": "reset_recalibrate",
+  "mode": "direct",
+  "profile": "edge-only",
+  "rate_hz": null,
+  "seed": 19,
+  "selection": "directed",
+  "warmup": 2
+}

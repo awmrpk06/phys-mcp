@@ -1,0 +1,277 @@
+{
+  "label": "exploratory-sampler-calibration",
+  "purpose": "sampler-calibration",
+  "schema_version": 1,
+  "trials": [
+    {
+      "condition": "off",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-000",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "condition": "250ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-000",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "condition": "1000ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-000",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 1000,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 19,
+      "warmup": 200
+    },
+    {
+      "condition": "off",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-001",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "condition": "1000ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-001",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 1000,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "condition": "250ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-001",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 20,
+      "warmup": 200
+    },
+    {
+      "condition": "250ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-002",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "condition": "off",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-002",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "condition": "1000ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-002",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 1000,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 21,
+      "warmup": 200
+    },
+    {
+      "condition": "250ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-003",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "condition": "1000ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-003",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 1000,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "condition": "off",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-003",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 22,
+      "warmup": 200
+    },
+    {
+      "condition": "1000ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-004",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 1000,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "condition": "off",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-004",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "condition": "250ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-004",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 23,
+      "warmup": 200
+    },
+    {
+      "condition": "1000ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-005",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 1000,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "condition": "250ms",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-005",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": true,
+        "tegrastats": true
+      },
+      "seed": 24,
+      "warmup": 200
+    },
+    {
+      "condition": "off",
+      "duration_s": 3.0,
+      "iterations": null,
+      "mode": "orchestrated",
+      "pair_id": "block-005",
+      "profile": "standard",
+      "sampling": {
+        "interval_ms": 250,
+        "process": false,
+        "tegrastats": false
+      },
+      "seed": 24,
+      "warmup": 200
+    }
+  ]
+}

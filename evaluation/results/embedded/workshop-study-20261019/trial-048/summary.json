@@ -1,0 +1,135 @@
+{
+  "launch_to_ready_ms": 760.360953,
+  "process_sampling": true,
+  "returncode": 0,
+  "sensors_enabled": true,
+  "summary": {
+    "baseline_adjusted_power": {
+      "active_minus_bracketing_idle_w": -0.009754991139908853,
+      "interpretation": "Whole-platform active minus ready-worker idle; includes backend and instrumentation, not isolated control-plane power.",
+      "minimum_coverage_fraction": 0.9,
+      "usable": true
+    },
+    "latency_mean_ms": 0.36969536000000003,
+    "latency_median_ms": 0.3647475,
+    "latency_p95_ms": 0.441582,
+    "latency_p99_ms": 0.504816,
+    "phases": {
+      "idle_after": {
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 3.003065547,
+          "platform_energy_j_over_observed_interval": 14.056171053806045,
+          "platform_mean_power_w": 4.680607477198714
+        },
+        "processes": {
+          "controller": {
+            "cpu_observed_interval_s": 2.772663426,
+            "cpu_percent_one_core": 0.7213280852069628,
+            "rss_max_kib": 26208,
+            "rss_mean_kib": 26208,
+            "sample_count": 12
+          },
+          "worker": {
+            "cpu_observed_interval_s": 2.772667394,
+            "cpu_percent_one_core": 0.0,
+            "rss_max_kib": 65252,
+            "rss_mean_kib": 65252,
+            "sample_count": 12
+          }
+        }
+      },
+      "idle_before": {
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 3.003057517,
+          "platform_energy_j_over_observed_interval": 14.442815073255888,
+          "platform_mean_power_w": 4.809370114124221
+        },
+        "processes": {
+          "controller": {
+            "cpu_observed_interval_s": 2.771985742,
+            "cpu_percent_one_core": 1.0822566489232615,
+            "rss_max_kib": 26208,
+            "rss_mean_kib": 26208,
+            "sample_count": 12
+          },
+          "worker": {
+            "cpu_observed_interval_s": 2.772015055,
+            "cpu_percent_one_core": 0.0,
+            "rss_max_kib": 65252,
+            "rss_mean_kib": 65252,
+            "sample_count": 12
+          }
+        }
+      },
+      "measurement": {
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 6.00020723,
+          "platform_energy_j_over_observed_interval": 28.412384109630658,
+          "platform_mean_power_w": 4.735233804521558
+        },
+        "processes": {
+          "controller": {
+            "cpu_observed_interval_s": 5.546278244,
+            "cpu_percent_one_core": 0.9015054384278429,
+            "rss_max_kib": 26208,
+            "rss_mean_kib": 26208,
+            "sample_count": 23
+          },
+          "worker": {
+            "cpu_observed_interval_s": 5.546292837,
+            "cpu_percent_one_core": 5.769619625297114,
+            "rss_max_kib": 65252,
+            "rss_mean_kib": 65252,
+            "sample_count": 23
+          }
+        }
+      },
+      "ready_idle": {
+        "power": {
+          "coverage_fraction": 1.0,
+          "idle_subtracted": false,
+          "observed_interval_s": 9.696e-06,
+          "platform_energy_j_over_observed_interval": 5.367202420331448e-05,
+          "platform_mean_power_w": 5.535481044071213
+        },
+        "processes": {
+          "controller": {
+            "cpu_observed_interval_s": 0,
+            "cpu_percent_one_core": null,
+            "rss_max_kib": null,
+            "rss_mean_kib": null,
+            "sample_count": 0
+          },
+          "worker": {
+            "cpu_observed_interval_s": 0,
+            "cpu_percent_one_core": null,
+            "rss_max_kib": null,
+            "rss_mean_kib": null,
+            "sample_count": 0
+          }
+        }
+      }
+    },
+    "power": {
+      "coverage_fraction": 1.0,
+      "idle_subtracted": false,
+      "observed_interval_s": 6.00020723,
+      "platform_energy_j_over_observed_interval": 28.412384109630658,
+      "platform_mean_power_w": 4.735233804521558
+    },
+    "power_sample_count": 49,
+    "process_peak_rss_kib": 65252,
+    "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+    "request_count": 600,
+    "sensor_sample_count": 49,
+    "skipped_releases": 0,
+    "successful_requests": 600
+  },
+  "timed_out": false
+}

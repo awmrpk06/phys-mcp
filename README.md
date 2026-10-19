@@ -1,5 +1,19 @@
 # phys-MCP v3.0
 
+Current upstream: [fischesn/cp2n2](https://github.com/fischesn/cp2n2).
+This repository preserves the measured phys-MCP baseline and Jetson evaluation;
+its results must not be attributed to untested newer upstream versions.
+
+## Embedded Workshop Working Draft
+
+[Read the paper (PDF)](docs/embedded-feasibility/paper.pdf) |
+[Markdown](docs/embedded-feasibility/paper.md) |
+[Data and reproduction](docs/embedded-feasibility/README.md)
+
+The four-page draft reports a 60-trial Jetson Orin Nano study with paired local
+and localhost HTTP measurements. It is published here for author review, not as
+an accepted workshop paper. Authorship and venue remain to be finalized.
+
 `phys-MCP` is a substrate-aware control-plane prototype for exposing heterogeneous **physical neural network (PNN)** resources as discoverable, invocable, and monitorable software-visible backends.
 
 The system is designed for settings in which materially different computational substrates cannot be treated as ordinary stateless accelerators. Instead, they expose distinct I/O modalities, timing regimes, lifecycle constraints, observability limits, and health or validity conditions. `phys-MCP` provides a single orchestration layer above such backends while preserving these substrate-specific semantics.
@@ -14,6 +28,11 @@ This repository contains:
 - demos, tests, and evaluation scripts
 
 The current code base should be understood as a **research prototype**: it is operational, structured, and demonstrable, but not a production runtime.
+
+The [embedded feasibility protocol](docs/embedded-feasibility/protocol.md) documents
+the isolated Jetson evaluation harness, smoke campaign, measurement boundaries,
+and remaining gates before publication experiments. New campaigns preserve the
+existing results and do not modify control-plane behavior.
 
 ---
 

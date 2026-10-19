@@ -1,0 +1,15 @@
+{
+  "backend": "wetware",
+  "base_url": null,
+  "baseline_s": 0.0,
+  "duration_s": null,
+  "idle_s": 0.0,
+  "iterations": 2000,
+  "maintenance": "reset_recalibrate",
+  "mode": "direct",
+  "profile": "standard",
+  "rate_hz": null,
+  "seed": 19,
+  "selection": "directed",
+  "warmup": 200
+}

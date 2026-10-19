@@ -1,0 +1,27 @@
+{
+  "pdf_pages": 4,
+  "sha256": {
+    "figures/calibration.pdf": "9170d41d7cd8e3b7c671e3aaa0b988220808d61a702c5753a492c45c4d4e5615",
+    "figures/calibration.png": "f9c2bde90e1a188ad350011b3803bea17b599184dcf95fb29a552e74a59d1144",
+    "figures/latency.pdf": "0ab1f28a35d5c29471e7b071982aa7c4d37d1bd92cae9445fe30627a886e1a83",
+    "figures/latency.png": "795b265a3d2d85ae7f71a6a8aa984239e3d12e84fb1a90fac84b0301c3f0f591",
+    "figures/resources.pdf": "50671fc53bf242ee0fbcf960c71367d09690bc7ba15c516079f962c22253fd6b",
+    "figures/resources.png": "45ce9e51c6de566065d2fe7e7ce34e7335350d919d5c2ed2c58c32ff91cafb67",
+    "latency-table.csv": "6f97dcfa771cc80fb6affb400a9806376a1ae0a01ca54046ff1b54effefc6246",
+    "paper-campaign.json": "d54077c976e5688252366fb29a944824b7031dad625c978a8c5c7072c4580192",
+    "paper-results.json": "6c1f42181e2da23e2a468e8cb31246208708f829fbab4d6898354ad70ee36e93",
+    "paper-source.md": "a593c243d94b3d8ffc8dddcbfc8f6126dacd32f651b1b80310d9c4d1d9cfde72",
+    "paper.md": "3fd1f8a9618c826eec796b7bcc064c0108bb63a5e17d5c749e82299543b29b0f",
+    "paper.pdf": "ca251598b92aca535a4ceb4ae782dcf947c2b30fc382d53d63e16e89adbbd817"
+  },
+  "source_archives": {
+    "calibration": {
+      "trial_count": 18,
+      "verified_files": 179
+    },
+    "study": {
+      "trial_count": 60,
+      "verified_files": 557
+    }
+  }
+}

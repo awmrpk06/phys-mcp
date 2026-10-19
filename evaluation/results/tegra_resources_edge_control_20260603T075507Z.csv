@@ -1,0 +1,3 @@
+ram_used_mb,ram_total_mb,swap_used_mb,swap_total_mb,cpu_mean_percent,cpu_max_percent,gr3d_percent,max_temperature_c,vdd_in_mw
+3861,7607,6,3804,38.333333333333336,56,0,53.843,6307
+3860,7607,6,3804,39.5,58,0,53.593,6150

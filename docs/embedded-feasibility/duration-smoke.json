@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "label": "duration-and-idle-baseline-validation-exploratory",
+  "trials": [
+    {"mode": "direct", "iterations": null, "duration_s": 6, "rate_hz": 100, "baseline_s": 3, "warmup": 200},
+    {"mode": "orchestrated", "iterations": null, "duration_s": 6, "rate_hz": 100, "baseline_s": 3, "warmup": 200},
+    {"mode": "orchestrated", "selection": "capability", "maintenance": "native", "iterations": null, "duration_s": 6, "rate_hz": 100, "baseline_s": 3, "warmup": 200}
+  ]
+}

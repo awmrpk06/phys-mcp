@@ -1,4 +1,9 @@
 python-dotenv
+pydantic>=2
+typing-extensions>=4
+numpy
+scipy
+matplotlib
 cl-sdk
 pytest
 requests

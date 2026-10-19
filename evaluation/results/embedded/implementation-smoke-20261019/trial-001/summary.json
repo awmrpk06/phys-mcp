@@ -1,0 +1,26 @@
+{
+  "launch_to_ready_ms": 740.429025,
+  "returncode": 0,
+  "sensors_enabled": true,
+  "summary": {
+    "latency_mean_ms": 0.3199013,
+    "latency_median_ms": 0.31108199999999997,
+    "latency_p95_ms": null,
+    "latency_p99_ms": null,
+    "power": {
+      "coverage_fraction": 1.0,
+      "idle_subtracted": false,
+      "observed_interval_s": 0.00428103,
+      "platform_energy_j_over_observed_interval": 0.02252511013083405,
+      "platform_mean_power_w": 5.261609970225401
+    },
+    "power_sample_count": 4,
+    "process_peak_rss_kib": 65136,
+    "quantile_method": "nearest rank; p95 requires 20 samples, p99 requires 100",
+    "request_count": 10,
+    "sensor_sample_count": 4,
+    "skipped_releases": 0,
+    "successful_requests": 10
+  },
+  "timed_out": false
+}

@@ -1,0 +1,13 @@
+{
+  "interval_ms": 250,
+  "sensors_enabled": true,
+  "service_thread_environment": {
+    "MKL_NUM_THREADS": null,
+    "NUMEXPR_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "PYTHONHASHSEED": null
+  },
+  "timeout_s_per_trial": 90.0,
+  "timestamp_source": "time.monotonic_ns, sampler receipt time"
+}

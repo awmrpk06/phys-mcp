@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "label": "implementation-smoke-exploratory-not-publication-data",
+  "trials": [
+    {"backend": "edge", "profile": "edge-only", "mode": "direct", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "edge", "profile": "edge-only", "mode": "orchestrated", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "chemical", "mode": "direct", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "chemical", "mode": "orchestrated", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "wetware", "mode": "direct", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "wetware", "mode": "orchestrated", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "http", "mode": "direct", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "http", "mode": "orchestrated", "iterations": 10, "warmup": 2, "idle_s": 0.25},
+    {"backend": "edge", "mode": "orchestrated", "selection": "capability", "maintenance": "native", "iterations": 100, "warmup": 0, "rate_hz": 100, "idle_s": 0.25}
+  ]
+}
