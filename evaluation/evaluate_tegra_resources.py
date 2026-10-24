@@ -108,6 +108,11 @@ class TegraStatsSampler:
         self.lines: list[str] = []
         self._output_path = output_path
         self._output = None
+        self.latest_sample = None
+
+    @property
+    def pid(self) -> int | None:
+        return self._process.pid if self._process is not None else None
 
     def __enter__(self) -> Self:
         if self._output_path is not None:
@@ -158,6 +163,7 @@ class TegraStatsSampler:
                 else:
                     sample = parse_tegrastats_line(clean)
                     sample["monotonic_ns"] = time.monotonic_ns()
+                    self.latest_sample = sample
                     self._output.write(json.dumps(sample) + "\n")
 
 

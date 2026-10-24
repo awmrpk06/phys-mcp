@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import subprocess
@@ -20,6 +21,38 @@ def blocked_path(name: str) -> bool:
         or (path.name.startswith(".env.") and path.name != ".env.example")
         or path.suffix in {".pem", ".key", ".h5"}
     )
+
+
+def approved_simulator_recording(name: str, payload: bytes, evidence: dict, manifest: dict) -> bool:
+    path = Path(name)
+    approved_directories = {
+        "evaluation/results/original-paper-20261024/e3-provider/provider-trace",
+        "evaluation/results/upstream-profile-20261024/e3-provider/provider-trace",
+    }
+    recording = evidence.get("recording_artifact", {})
+    return (
+        path.parent.as_posix() in approved_directories
+        and path.suffix == ".h5"
+        and len(payload) < 10 * 1024 * 1024
+        and payload.startswith(b"\x89HDF\r\n\x1a\n")
+        and evidence.get("runtime_kind") == "sdk_simulator"
+        and evidence.get("evidence_ceiling") == "E3"
+        and evidence.get("biological_claim") is False
+        and recording.get("online_offline_match") is True
+        and recording.get("filename") == path.name
+        and manifest.get(f"provider-trace/{path.name}") == hashlib.sha256(payload).hexdigest()
+    )
+
+
+def staged_json(name: str) -> dict:
+    result = subprocess.run(["git", "show", f":{name}"], cwd=ROOT, capture_output=True, check=False)
+    if result.returncode != 0:
+        return {}
+    try:
+        value = json.loads(result.stdout)
+        return value if isinstance(value, dict) else {}
+    except (ValueError, UnicodeError):
+        return {}
 
 
 def audit() -> dict:
@@ -42,6 +75,7 @@ def audit() -> dict:
             metadata, name = entry.split(b"\t", 1)
             entries.append((metadata.split()[1].decode(), name.decode()))
     findings = []
+    simulator_recordings = []
     total_bytes = 0
     batch = subprocess.run(
         ["git", "cat-file", "--batch"], cwd=ROOT,
@@ -59,12 +93,20 @@ def audit() -> dict:
         offset = end + size + 2
         total_bytes += size
         if blocked_path(name):
-            findings.append({"path": name, "reason": "Excluded local/private artifact tracked"})
+            path = Path(name)
+            approved = path.suffix == ".h5" and approved_simulator_recording(
+                name, payload, staged_json((path.parent / "result.json").as_posix()),
+                staged_json((path.parent.parent / "reproduction-manifest.json").as_posix()),
+            )
+            if approved:
+                simulator_recordings.append(name)
+            else:
+                findings.append({"path": name, "reason": "Excluded local/private artifact tracked"})
         if any(secret in payload for secret in secrets) or any(pattern.search(payload) for pattern in patterns):
             findings.append({"path": name, "reason": "Potential credential content; value suppressed"})
         if size >= 95 * 1024 * 1024:
             findings.append({"path": name, "reason": "File exceeds conservative GitHub size budget"})
-    return {"staged_files_checked": len(entries), "staged_bytes": total_bytes, "findings": findings, "scope": "Current index only; existing history is not rewritten or certified clean."}
+    return {"staged_files_checked": len(entries), "staged_bytes": total_bytes, "approved_simulator_recordings": simulator_recordings, "findings": findings, "scope": "Current index only; existing history is not rewritten or certified clean."}
 
 
 def main() -> None:

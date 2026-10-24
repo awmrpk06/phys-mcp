@@ -1,0 +1,5 @@
+Metric (window mean),First minute,Last minute
+RSS (MiB),90.2,107.2
+PSS (MiB),82.5,99.4
+CPU (% one core),9.1,15.0
+Invocation (ms),10.6,16.6

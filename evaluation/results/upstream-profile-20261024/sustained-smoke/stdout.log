@@ -1,0 +1,19 @@
+{
+  "upstream_commit": "36fbae002b0a9e066416ea9cafbb966a33fe53bb",
+  "duration_s": 2.0,
+  "rate_hz": 10.0,
+  "started_ns": 434061148958201,
+  "finished_ns": 434063149255109,
+  "ready_ns": 434058148231408,
+  "admission_deadline_ns": 434063148958201,
+  "planned_releases": 20,
+  "completed_requests": 20,
+  "successful_requests": 20,
+  "missed_releases": 0,
+  "maintenance_failures": 0,
+  "unexpected_backends": 0,
+  "idempotent_replays": 0,
+  "latency_mean_ms": 10.37689555,
+  "peak_rss_kib": 88196,
+  "scope": "Sustained extension, not the original 25-run overhead protocol. Same original task factory and explicit maintenance; no injected faults or hosted model."
+}

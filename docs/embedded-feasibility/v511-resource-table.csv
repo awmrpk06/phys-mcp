@@ -1,0 +1,10 @@
+Metric,Observed value
+Successful / planned requests,3000 / 3000
+Missed releases / replays,0 / 0
+Mean invocation latency,13.64 ms
+Mean root CPU (one-core basis),12.1%
+Sampled peak root RSS,109.4 MiB
+Sampled peak tree PSS,101.5 MiB
+Maximum platform temperature,57.7 C
+Mean platform input power,4.86 W
+Power coverage / long gaps,100.0% / 0

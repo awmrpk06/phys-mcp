@@ -1,0 +1,65 @@
+{
+  "scenarios": [
+    {
+      "decision_notes": "Selected primary candidate 'remote-edge-backend'.",
+      "expectation_met": true,
+      "expected_behavior": "Select remote edge backend because local edge is runtime-degraded.",
+      "failure_reason": null,
+      "recovery_actions": "",
+      "scenario": "drifted_primary_edge_avoided",
+      "selected_backend": "remote-edge-backend",
+      "success": true,
+      "used_fallback": false,
+      "validation_failures": ""
+    },
+    {
+      "decision_notes": "Selected primary candidate 'edge-backend'. | Preparation failed for 'edge-backend': Injected prepare failure for edge backend. | Trying fallback candidate 'remote-edge-backend'.",
+      "expectation_met": true,
+      "expected_behavior": "Fallback to remote edge backend after local prepare failure.",
+      "failure_reason": null,
+      "recovery_actions": "",
+      "scenario": "prepare_failure_with_fallback",
+      "selected_backend": "remote-edge-backend",
+      "success": true,
+      "used_fallback": true,
+      "validation_failures": ""
+    },
+    {
+      "decision_notes": "No compatible backend passed matching and policy checks.",
+      "expectation_met": true,
+      "expected_behavior": "Reject wetware task because human supervision is unavailable.",
+      "failure_reason": "POLICY_DENIED: No compatible backend passed matching and policy checks.",
+      "recovery_actions": "",
+      "scenario": "policy_violation_rejected",
+      "selected_backend": null,
+      "success": false,
+      "used_fallback": false,
+      "validation_failures": ""
+    },
+    {
+      "decision_notes": "No compatible backend passed matching and policy checks.",
+      "expectation_met": true,
+      "expected_behavior": "Reject chemical backend because age_of_information exceeds task bound.",
+      "failure_reason": "POLICY_DENIED: No compatible backend passed matching and policy checks.",
+      "recovery_actions": "",
+      "scenario": "stale_twin_rejected",
+      "selected_backend": null,
+      "success": false,
+      "used_fallback": false,
+      "validation_failures": ""
+    },
+    {
+      "decision_notes": "Selected primary candidate 'remote-edge-backend'.",
+      "expectation_met": true,
+      "expected_behavior": "Select the remote backend because feasibility excludes the primary before ranking.",
+      "failure_reason": null,
+      "recovery_actions": "",
+      "scenario": "telemetry_loss_excludes_primary",
+      "selected_backend": "remote-edge-backend",
+      "success": true,
+      "used_fallback": false,
+      "validation_failures": ""
+    }
+  ],
+  "success_rate": 1.0
+}

@@ -1,0 +1,48 @@
+Random data source is using seed: 629335763
+Running application in /home/uit/Projects/phys-mcp/_temp/cp2n2-v5.1.1/cl-apps/cp2n2-biopattern-gate with configuration /home/uit/Projects/phys-mcp/_temp/cp2n2-v5.1.1/cl-apps/cp2n2-biopattern-gate/default.json
+Application RunSummary output:
+{'cl_api_exercised': True,
+ 'content': '# BioPattern Gate — E3 technical run\n'
+            '\n'
+            '- Trials: 14\n'
+            '- Scored trials: 12\n'
+            '- Sham trials: 2\n'
+            '- Deterministic pipeline accuracy: 1.000\n'
+            '- Native HDF5 stims: 24\n'
+            '- Native HDF5 spikes: 60\n'
+            '- Online/offline decision match: yes\n'
+            '- Config: '
+            '`5fccaac3022e223fc181508833eaad38755279556b43b6b2df4e2f7e032a08e4`\n'
+            '- Decoder: '
+            '`42789a20ea16e048f1a23b28e601ff3445e64b125c48de8656b11e612991afbf`\n'
+            '\n'
+            '**This simulator run is technical evidence only. It is not a '
+            'biological PNN result.**\n',
+ 'evidence_ceiling': 'E3',
+ 'recording_artifact': {'filename': '2026-10-24_09-33-48.807+00-00_cp2n2-cl-local-technical-e3.h5',
+                        'online_offline_match': True,
+                        'spike_count': 60,
+                        'stim_count': 24,
+                        'terminal_state': 'complete'},
+ 'result': {'accuracy': 1.0,
+            'attestation': 'cl.is_simulator() == true',
+            'biological_claim': False,
+            'cl_api_exercised': True,
+            'config_sha256': '5fccaac3022e223fc181508833eaad38755279556b43b6b2df4e2f7e032a08e4',
+            'decoder_sha256': '42789a20ea16e048f1a23b28e601ff3445e64b125c48de8656b11e612991afbf',
+            'evidence_ceiling': 'E3',
+            'pnn_evidence': False,
+            'recording_artifact': {'filename': '2026-10-24_09-33-48.807+00-00_cp2n2-cl-local-technical-e3.h5',
+                                   'online_offline_match': True,
+                                   'spike_count': 60,
+                                   'stim_count': 24,
+                                   'terminal_state': 'complete'},
+            'run_id': 'cl-local-technical-e3',
+            'runtime_kind': 'sdk_simulator',
+            'scored_trial_count': 12,
+            'sham_trial_count': 2,
+            'substrate_executed': False,
+            'trial_count': 14},
+ 'runtime_kind': 'sdk_simulator',
+ 'type': <OutputType.MARKDOWN: 'markdown'>}
+Application run completed successfully

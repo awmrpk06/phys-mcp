@@ -1,0 +1,32 @@
+{
+  "elapsed_s": 310.7286899689934,
+  "guard_reason": null,
+  "profile": true,
+  "profile_complete": true,
+  "returncode": 0,
+  "stage": "sustained",
+  "timed_out": false,
+  "upstream_sources_unchanged": true,
+  "windows_ns": {
+    "command": [
+      434257927679696,
+      434562461976999
+    ],
+    "platform_after": [
+      434562461981319,
+      434565462299247
+    ],
+    "platform_before": [
+      434254927481651,
+      434257927587725
+    ],
+    "ready_worker_idle": [
+      434259177699109,
+      434262178390578
+    ],
+    "steady_workload": [
+      434262178390578,
+      434562178703685
+    ]
+  }
+}

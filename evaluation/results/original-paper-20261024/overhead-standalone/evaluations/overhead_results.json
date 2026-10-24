@@ -1,0 +1,35 @@
+{
+  "iterations": 25,
+  "results": [
+    {
+      "added_overhead_ms": 9.509369,
+      "backend": "chemical",
+      "direct_mean_ms": 2.48767,
+      "direct_std_ms": 0.275698,
+      "iterations": 25,
+      "orchestrated_mean_ms": 11.997039,
+      "orchestrated_std_ms": 1.346771,
+      "relative_factor": 4.822602
+    },
+    {
+      "added_overhead_ms": 8.440411,
+      "backend": "wetware",
+      "direct_mean_ms": 0.191912,
+      "direct_std_ms": 0.077542,
+      "iterations": 25,
+      "orchestrated_mean_ms": 8.632323,
+      "orchestrated_std_ms": 0.7177,
+      "relative_factor": 44.980551
+    },
+    {
+      "added_overhead_ms": 9.967732,
+      "backend": "edge",
+      "direct_mean_ms": 0.192142,
+      "direct_std_ms": 0.078454,
+      "iterations": 25,
+      "orchestrated_mean_ms": 10.159874,
+      "orchestrated_std_ms": 16.703309,
+      "relative_factor": 52.877023
+    }
+  ]
+}

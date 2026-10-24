@@ -4,6 +4,7 @@ typing-extensions>=4
 numpy
 scipy
 matplotlib
+psutil
 cl-sdk
 pytest
 requests

@@ -1,0 +1,408 @@
+{
+  "fault_cases": 5,
+  "fault_cases_passed": 5,
+  "latency": [
+    {
+      "aggregate_ms": 6.929981,
+      "backend": "chemical",
+      "iterations_per_path": 25,
+      "published_ms": 0.361,
+      "standalone_ms": 9.509369
+    },
+    {
+      "aggregate_ms": 6.424729,
+      "backend": "wetware",
+      "iterations_per_path": 25,
+      "published_ms": 0.194,
+      "standalone_ms": 8.440411
+    },
+    {
+      "aggregate_ms": 5.845523,
+      "backend": "edge",
+      "iterations_per_path": 25,
+      "published_ms": 0.189,
+      "standalone_ms": 9.967732
+    }
+  ],
+  "provider": {
+    "biological_claim": false,
+    "recording_artifact": {
+      "filename": "2026-10-24_09-07-20.991+00-00_cp2n2-cl-local-technical-e3.h5",
+      "online_offline_match": true,
+      "spike_count": 60,
+      "stim_count": 24,
+      "terminal_state": "complete"
+    },
+    "runtime_kind": "sdk_simulator",
+    "trial_count": 14
+  },
+  "published_latency_source": "https://arxiv.org/html/2605.04256v2#S6.SS4",
+  "root_process": {
+    "cpu_mean_percent_one_core": 12.099178953179464,
+    "identity": "89688:1792834535.92",
+    "name": "python",
+    "pss_max_mib": 101.4833984375,
+    "role": "root",
+    "rss_max_mib": 109.390625,
+    "samples": 1069
+  },
+  "selectors": {
+    "constraint_based": {
+      "correct": 6,
+      "total": 7
+    },
+    "cp2n2_lexicographic": {
+      "correct": 7,
+      "total": 7
+    },
+    "random_admissible": {
+      "correct": 6,
+      "total": 7
+    },
+    "static_priority": {
+      "correct": 6,
+      "total": 7
+    },
+    "weighted_comparison": {
+      "correct": 7,
+      "total": 7
+    }
+  },
+  "source_manifests": {
+    "original-paper-20261024/core": "425240d7a16268e80be774266896f40184211d876372012fa75a6991ffaa8724",
+    "original-paper-20261024/distributed-standalone": "246bf36a4bcad05b7aa5307345387b1bcb643be47df5f807b973e9dcb4f4cd2d",
+    "original-paper-20261024/e3-control": "0a1f0649485ef926bfecce99462fbbf36ce5cef8c7819eaeb3c7beb94b10dc11",
+    "original-paper-20261024/e3-provider": "ec3892f9d2df97b23d086967487b7cce5ac1cd4bfba7fe4d3912e27ebf7c1cb5",
+    "original-paper-20261024/overhead-standalone": "767a1702b0dc14fd81b0b9369ec432b20507465e3a8a1d2288c89055fc0b9074",
+    "original-paper-20261024/tests": "9653f4e92f8e16976a359cef682ed5f4c9df31e563ea70ee7467ec7f2a46a174",
+    "original-paper-20261024/tests-python312": "56500ff2bcfc54b516e15040b68f833828d85ae5643ec8ec546362c1839766ea",
+    "upstream-profile-20261024/core": "78c6a96e9082087fdbb0309392ee4dfcbe167a718e5982e33a62a71c2948ed16",
+    "upstream-profile-20261024/e3-control": "042581ed0323631b6883f1547a24834451e61aeee20407c2000b4a63ae0433d3",
+    "upstream-profile-20261024/e3-provider": "9a7f912305a8e9dc728d0e30576de83fedb1ec312132057b11d89c542058c0a0",
+    "upstream-profile-20261024/http": "125ceccd930efe0df75885f0801335565d26d86fff6dac2aa87b1e6bec31e3c7",
+    "upstream-profile-20261024/overhead": "4c3861b8d9355ded7fcc81884bfbfa0b35550c54df2bbde797aea828a28b80b3",
+    "upstream-profile-20261024/sustained-300s-10hz": "e0564179652e0dcbc025533fdda0f175c2a03ecbb7b9d6ae6d7e72e7d1cc3a04",
+    "upstream-profile-20261024/sustained-smoke": "1af2dc9f5ced6527fef34ea8ee6e5879c82b0ad42e0227b145e5019ab8e68254"
+  },
+  "stage_outcomes": {
+    "original-paper-20261024/core": {
+      "elapsed_s": 34.055511226993985,
+      "returncode": 1,
+      "stage": "core",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "original-paper-20261024/distributed-standalone": {
+      "elapsed_s": 49.23786818003282,
+      "returncode": 1,
+      "stage": "distributed",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "original-paper-20261024/e3-control": {
+      "elapsed_s": 1.7708488159696572,
+      "returncode": 0,
+      "stage": "e3-control",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "original-paper-20261024/e3-provider": {
+      "elapsed_s": 5.878527933964506,
+      "returncode": 0,
+      "stage": "e3-provider",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "original-paper-20261024/overhead-standalone": {
+      "elapsed_s": 3.6755425879964605,
+      "returncode": 0,
+      "stage": "overhead",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "original-paper-20261024/tests": {
+      "elapsed_s": 30.257185639988165,
+      "returncode": 2,
+      "stage": "tests",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "original-paper-20261024/tests-python312": {
+      "elapsed_s": 28.33895336400019,
+      "returncode": 0,
+      "stage": "tests",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "upstream-profile-20261024/core": {
+      "elapsed_s": 41.82667495502392,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 1,
+      "stage": "core",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          434203219883605,
+          434238959871373
+        ],
+        "platform_after": [
+          434238959875149,
+          434241959984869
+        ],
+        "platform_before": [
+          434200219637504,
+          434203219787570
+        ]
+      }
+    },
+    "upstream-profile-20261024/e3-control": {
+      "elapsed_s": 7.960925310966559,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 0,
+      "stage": "e3-control",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          434138228828306,
+          434140132776838
+        ],
+        "platform_after": [
+          434140132783366,
+          434143132884876
+        ],
+        "platform_before": [
+          434135228589513,
+          434138228741103
+        ]
+      }
+    },
+    "upstream-profile-20261024/e3-provider": {
+      "elapsed_s": 11.64326753799105,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 0,
+      "stage": "e3-provider",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          434146738907503,
+          434152321217651
+        ],
+        "platform_after": [
+          434152321225267,
+          434155321314107
+        ],
+        "platform_before": [
+          434143738673636,
+          434146738811115
+        ]
+      }
+    },
+    "upstream-profile-20261024/http": {
+      "elapsed_s": 9.06543998804409,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 0,
+      "stage": "http",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          434128624468260,
+          434131632500482
+        ],
+        "platform_after": [
+          434131632508451,
+          434134632608903
+        ],
+        "platform_before": [
+          434125624291582,
+          434128624383777
+        ]
+      }
+    },
+    "upstream-profile-20261024/overhead": {
+      "elapsed_s": 9.961457588011399,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 0,
+      "stage": "overhead",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          433923148153364,
+          433927024225475
+        ],
+        "platform_after": [
+          433927024230371,
+          433930024329623
+        ],
+        "platform_before": [
+          433920147958367,
+          433923148057265
+        ]
+      }
+    },
+    "upstream-profile-20261024/sustained-300s-10hz": {
+      "elapsed_s": 310.7286899689934,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 0,
+      "stage": "sustained",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          434257927679696,
+          434562461976999
+        ],
+        "platform_after": [
+          434562461981319,
+          434565462299247
+        ],
+        "platform_before": [
+          434254927481651,
+          434257927587725
+        ],
+        "ready_worker_idle": [
+          434259177699109,
+          434262178390578
+        ],
+        "steady_workload": [
+          434262178390578,
+          434562178703685
+        ]
+      }
+    },
+    "upstream-profile-20261024/sustained-smoke": {
+      "elapsed_s": 8.750850078009535,
+      "guard_reason": null,
+      "profile": true,
+      "profile_complete": true,
+      "returncode": 0,
+      "stage": "sustained",
+      "timed_out": false,
+      "upstream_sources_unchanged": true,
+      "windows_ns": {
+        "command": [
+          434056881994379,
+          434063546778378
+        ],
+        "platform_after": [
+          434063546783178,
+          434064546868574
+        ],
+        "platform_before": [
+          434055881803797,
+          434056881897096
+        ],
+        "ready_worker_idle": [
+          434058148231408,
+          434061148958201
+        ],
+        "steady_workload": [
+          434061148958201,
+          434063149255109
+        ]
+      }
+    }
+  },
+  "steady_profile": {
+    "duration_s": 300.000313107,
+    "gpu_max_percent": 9,
+    "max_temperature_c": 57.687,
+    "observed_tree_pss_sum_max_mib": 101.4833984375,
+    "observed_tree_rss_sum_max_mib": 109.390625,
+    "power": {
+      "coverage_fraction": 1.0,
+      "idle_subtracted": false,
+      "observed_interval_s": 300.000313107,
+      "platform_energy_j_over_observed_interval": 1458.6072799785538,
+      "platform_mean_power_w": 4.862019192154369
+    },
+    "power_gaps_s": [],
+    "process_tree_samples": 1069,
+    "processes": [
+      {
+        "cpu_mean_percent_one_core": 12.099178953179464,
+        "identity": "89688:1792834535.92",
+        "name": "python",
+        "pss_max_mib": 101.4833984375,
+        "role": "root",
+        "rss_max_mib": 109.390625,
+        "samples": 1069
+      },
+      {
+        "cpu_mean_percent_one_core": 10.991275300122652,
+        "identity": "89657:1792834532.46",
+        "name": "python",
+        "pss_max_mib": 19.3427734375,
+        "role": "observer",
+        "rss_max_mib": 25.48046875,
+        "samples": 1069
+      },
+      {
+        "cpu_mean_percent_one_core": 1.0337610928059606,
+        "identity": "89662:1792834532.92",
+        "name": "tegrastats",
+        "pss_max_mib": 0.2099609375,
+        "role": "observer",
+        "rss_max_mib": 1.3125,
+        "samples": 1069
+      }
+    ],
+    "sensor_samples": 1141,
+    "system_cpu_mean_percent": 6.351153958515922,
+    "system_ram_max_mb": 4847,
+    "system_swap_max_mb": 683
+  },
+  "trend": {
+    "first": {
+      "cpu_mean_percent_one_core": 9.082250701761472,
+      "invocation_mean_ms": 10.572133823333333,
+      "pss_mean_mib": 82.46741174768519,
+      "rss_mean_mib": 90.19653548481308,
+      "window_s": 60
+    },
+    "last": {
+      "cpu_mean_percent_one_core": 14.992813120464962,
+      "invocation_mean_ms": 16.584443191986644,
+      "pss_mean_mib": 99.43276459316037,
+      "rss_mean_mib": 107.17825704225352,
+      "window_s": 60
+    }
+  },
+  "upstream_commit": "36fbae002b0a9e066416ea9cafbb966a33fe53bb",
+  "upstream_tests_passed": 146,
+  "workload": {
+    "admission_deadline_ns": 434562178390578,
+    "completed_requests": 3000,
+    "duration_s": 300.0,
+    "finished_ns": 434562178703685,
+    "idempotent_replays": 0,
+    "latency_mean_ms": 13.638856138333344,
+    "maintenance_failures": 0,
+    "missed_releases": 0,
+    "peak_rss_kib": 112016,
+    "planned_releases": 3000,
+    "rate_hz": 10.0,
+    "ready_ns": 434259177699109,
+    "scope": "Sustained extension, not the original 25-run overhead protocol. Same original task factory and explicit maintenance; no injected faults or hosted model.",
+    "started_ns": 434262178390578,
+    "successful_requests": 3000,
+    "unexpected_backends": 0,
+    "upstream_commit": "36fbae002b0a9e066416ea9cafbb966a33fe53bb"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "comparison_source": "https://arxiv.org/html/2605.04256v2#S6.SS4",
+  "e3_control": {
+    "audit_verified_rate": 1.0,
+    "expected_disposition_rate": 1.0,
+    "oracle_pass_rate": 1.0,
+    "raw_output_exposure_rate": 0.0,
+    "resource_reconciled_rate": 1.0,
+    "safe_action_rate": 1.0,
+    "schema_valid_rate": 1.0,
+    "substrate_execution_count": 1,
+    "total_trials": 8,
+    "unapproved_execution_rate": 0.0
+  },
+  "fault_expectation_rate": 1.0,
+  "gaps": {
+    "distributed": "Both unchanged full-default attempts aborted with connection-reset/disconnect exceptions; no complete 945-request matrix or final upstream manifest.",
+    "environment": "Python 3.12.15 and CL SDK 1.0.0 needed for cl.sim; original authors' exact interpreter/dependency/hardware configuration not established.",
+    "hosted_model": "Not run: original AI-Lab credential is unavailable. Reference planner is not a substitute for the 160-call Minimax campaign.",
+    "timing": "Released code yields materially higher overhead here than the publication. Hardware-only attribution is unsupported; author reconciliation required."
+  },
+  "holdout": {
+    "accuracy": 1.0,
+    "cases": [
+      {
+        "correct": true,
+        "expected_backend": "safe-local",
+        "policy": "lexicographic",
+        "predicted_backend": "safe-local",
+        "task_id": "holdout-balanced"
+      },
+      {
+        "correct": true,
+        "expected_backend": "fast-remote",
+        "policy": "latency_first",
+        "predicted_backend": "fast-remote",
+        "task_id": "holdout-latency"
+      },
+      {
+        "correct": true,
+        "expected_backend": "fast-remote",
+        "policy": "locality_cost_first",
+        "predicted_backend": "fast-remote",
+        "task_id": "holdout-cost"
+      },
+      {
+        "correct": true,
+        "expected_backend": null,
+        "policy": "lexicographic",
+        "predicted_backend": null,
+        "task_id": "holdout-infeasible"
+      }
+    ],
+    "correct": 4,
+    "total": 4
+  },
+  "http": {
+    "backend_id": "remote-edge-backend",
+    "endpoint_kind": "http_remote",
+    "iterations": 15,
+    "mean_backend_latency_ms": 3.946653,
+    "mean_roundtrip_ms": 5.810367,
+    "std_backend_latency_ms": 0.176037,
+    "std_roundtrip_ms": 0.757839,
+    "transport_overhead_ms": 1.863714
+  },
+  "matching_accuracy": 1.0,
+  "overhead_comparison": [
+    {
+      "backend": "chemical",
+      "iterations_per_path": 25,
+      "jetson_aggregate_added_ms": 6.929981,
+      "jetson_standalone_added_ms": 9.509369,
+      "published_added_ms": 0.361
+    },
+    {
+      "backend": "wetware",
+      "iterations_per_path": 25,
+      "jetson_aggregate_added_ms": 6.424729,
+      "jetson_standalone_added_ms": 8.440411,
+      "published_added_ms": 0.194
+    },
+    {
+      "backend": "edge",
+      "iterations_per_path": 25,
+      "jetson_aggregate_added_ms": 5.845523,
+      "jetson_standalone_added_ms": 9.967732,
+      "published_added_ms": 0.189
+    }
+  ],
+  "provider": {
+    "biological_claim": false,
+    "evidence_ceiling": "E3",
+    "recording_artifact": {
+      "filename": "2026-10-24_09-07-20.991+00-00_cp2n2-cl-local-technical-e3.h5",
+      "online_offline_match": true,
+      "spike_count": 60,
+      "stim_count": 24,
+      "terminal_state": "complete"
+    },
+    "runtime_kind": "sdk_simulator",
+    "scored_trial_count": 12,
+    "sham_trial_count": 2,
+    "trial_count": 14
+  },
+  "reproduction_complete": false,
+  "selectors": {
+    "constraint_based": {
+      "correct": 6,
+      "total": 7
+    },
+    "cp2n2_lexicographic": {
+      "correct": 7,
+      "total": 7
+    },
+    "random_admissible": {
+      "correct": 6,
+      "total": 7
+    },
+    "static_priority": {
+      "correct": 6,
+      "total": 7
+    },
+    "weighted_comparison": {
+      "correct": 7,
+      "total": 7
+    }
+  },
+  "stages": {
+    "core": {
+      "elapsed_s": 34.055511226993985,
+      "returncode": 1,
+      "stage": "core",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "distributed-standalone": {
+      "elapsed_s": 49.23786818003282,
+      "returncode": 1,
+      "stage": "distributed",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "e3-control": {
+      "elapsed_s": 1.7708488159696572,
+      "returncode": 0,
+      "stage": "e3-control",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "e3-provider": {
+      "elapsed_s": 5.878527933964506,
+      "returncode": 0,
+      "stage": "e3-provider",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "overhead-standalone": {
+      "elapsed_s": 3.6755425879964605,
+      "returncode": 0,
+      "stage": "overhead",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "tests": {
+      "elapsed_s": 30.257185639988165,
+      "returncode": 2,
+      "stage": "tests",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    },
+    "tests-python312": {
+      "elapsed_s": 28.33895336400019,
+      "returncode": 0,
+      "stage": "tests",
+      "timed_out": false,
+      "upstream_sources_unchanged": true
+    }
+  },
+  "upstream_commit": "36fbae002b0a9e066416ea9cafbb966a33fe53bb",
+  "verified_files": 141
+}

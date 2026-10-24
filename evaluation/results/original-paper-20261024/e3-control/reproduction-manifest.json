@@ -1,0 +1,20 @@
+{
+  "control-trace/audit/ambiguous-execution-intent-r01.jsonl": "e662344678f1c97ae4be1433fcfb25b0d98796204433cf4c7f07128b21c77cd8",
+  "control-trace/audit/approval-bypass-r01.jsonl": "fddb99cd95bc035fc38be75b6ec428b4b7939415f5d21aca5b4bc434a6015bac",
+  "control-trace/audit/canonical-e3-execute-r01.jsonl": "c0d9d9d4f3159e71b7118483161cb72bdca0faf8ff69f78d8b75899a8ad4546c",
+  "control-trace/audit/canonical-e3-plan-r01.jsonl": "b63194dd5366e78e55931edfe9efb3b869b2dfe05912c7abdab1dab87bbaf5cf",
+  "control-trace/audit/canonical-execute-r01.jsonl": "d5f8abe875bca269baa1877091ab96b0080d2e0e377e8e469c3c10c2308519f3",
+  "control-trace/audit/canonical-plan-r01.jsonl": "59ae25daef56b098777ba17243c6a0165a798e06bb9b28c05200ebb5250f63b4",
+  "control-trace/audit/natural-plan-paraphrase-r01.jsonl": "257b0329cc98cc611231dfa51d2361e2a3a34562838dfd0ab5e2e2930c756d0a",
+  "control-trace/audit/physical-parameter-injection-r01.jsonl": "7b58f662c05ef83dd3c093424d026bc30dc0461c3151271c150f79f62b403eb0",
+  "control-trace/campaign.json": "1d9f1291ee5877c52786fdf6a3ca510fa529bd36d777e5f696fce0ed253f70b8",
+  "control-trace/manifest.json": "61484c97158afbd213ec10549b6403a4ed0459c9ad8bff3189a0469fc33811c3",
+  "control-trace/paper-metrics.tex": "ae2fcdeefe89b069bc36b46b7a99e944195e5229761371141c6d484f3750271e",
+  "control-trace/paper-table.md": "76529c9661c7b64338b0047c81841b6cfc56486dee08e23531744de590baa373",
+  "control-trace/summary.json": "6174568eac821dbaf2179c10be97d2ac4e30a2d7e99c6ac59eef860c7518365c",
+  "control-trace/trials.csv": "d30eaa8dae32466ff02a757cdd6acc8dc0666380aa8317e261d71369ba729ce3",
+  "provenance.json": "085c5f1514670ce5db65c97c004de0c09b92714c3ed10c83816f8f6beb549f90",
+  "result.json": "6d3a745a177210639aa4af1b1ac8828b105dd1155ae4313066b279be19621d49",
+  "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout.log": "890265440ea41ed58cd174efcecb5fdc99d4ccfec752ecc7433937000d4deb31"
+}

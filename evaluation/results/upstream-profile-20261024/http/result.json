@@ -1,0 +1,24 @@
+{
+  "elapsed_s": 9.06543998804409,
+  "guard_reason": null,
+  "profile": true,
+  "profile_complete": true,
+  "returncode": 0,
+  "stage": "http",
+  "timed_out": false,
+  "upstream_sources_unchanged": true,
+  "windows_ns": {
+    "command": [
+      434128624468260,
+      434131632500482
+    ],
+    "platform_after": [
+      434131632508451,
+      434134632608903
+    ],
+    "platform_before": [
+      434125624291582,
+      434128624383777
+    ]
+  }
+}

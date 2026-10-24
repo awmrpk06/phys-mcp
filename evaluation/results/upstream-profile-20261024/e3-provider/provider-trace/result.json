@@ -1,0 +1,1089 @@
+{
+  "accuracy": 1.0,
+  "attestation": "cl.is_simulator() == true",
+  "biological_claim": false,
+  "cl_api_exercised": true,
+  "config_sha256": "5fccaac3022e223fc181508833eaad38755279556b43b6b2df4e2f7e032a08e4",
+  "decoder_sha256": "42789a20ea16e048f1a23b28e601ff3445e64b125c48de8656b11e612991afbf",
+  "evidence_ceiling": "E3",
+  "pnn_evidence": false,
+  "recording_artifact": {
+    "filename": "2026-10-24_09-33-48.807+00-00_cp2n2-cl-local-technical-e3.h5",
+    "online_offline_match": true,
+    "spike_count": 60,
+    "stim_count": 24,
+    "terminal_state": "complete"
+  },
+  "run_id": "cl-local-technical-e3",
+  "runtime_kind": "sdk_simulator",
+  "scored_trial_count": 12,
+  "sham_trial_count": 2,
+  "substrate_executed": false,
+  "trial_count": 14,
+  "trials": [
+    {
+      "block_index": 0,
+      "correct": null,
+      "decision_commit_sha256": "67cdf3fd8b356311134f292699cd89c757d9630240200e9206da3073432fe2ba",
+      "expected_label": null,
+      "feature_values": {
+        "active_readout_group_count": 0.0,
+        "first_spike_latency_ms::sim-readout": 100.0,
+        "spike_count::sim-readout::bin-00": 0.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 0.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "sham",
+      "predicted_label": "A",
+      "probability_a": 0.5,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 0,
+        "logical_sequence_present": false,
+        "observation_start_timestamp": 755,
+        "observation_stop_timestamp": 3255,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 0
+      },
+      "trial_index": 0
+    },
+    {
+      "block_index": 0,
+      "correct": true,
+      "decision_commit_sha256": "7cdd55b9089eeadf8644166abf0a86c63e7467337eb2ac30ea9ee41f71dd3aed",
+      "expected_label": "B",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 14.0,
+        "spike_count::sim-readout::bin-00": 1.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 2.0,
+        "spike_count::sim-readout::bin-04": 2.0
+      },
+      "kind": "pattern_b",
+      "predicted_label": "B",
+      "probability_a": 0.04742587317756679,
+      "route": "right",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 5760,
+        "observation_stop_timestamp": 8260,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 1
+    },
+    {
+      "block_index": 0,
+      "correct": true,
+      "decision_commit_sha256": "4823f4112cc924c8ad54e36b9d458b9252c964bb169c70e8b3c076e8ab5ef082",
+      "expected_label": "A",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 8.0,
+        "spike_count::sim-readout::bin-00": 2.0,
+        "spike_count::sim-readout::bin-01": 2.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 1.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "pattern_a",
+      "predicted_label": "A",
+      "probability_a": 0.9525741268224334,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 10765,
+        "observation_stop_timestamp": 13265,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 2
+    },
+    {
+      "block_index": 0,
+      "correct": true,
+      "decision_commit_sha256": "902db8457c9d757cbb5bbcf6dd9efc8f0778065627469428dde4f6fac3c5b073",
+      "expected_label": "A",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 8.0,
+        "spike_count::sim-readout::bin-00": 2.0,
+        "spike_count::sim-readout::bin-01": 2.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 1.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "pattern_a",
+      "predicted_label": "A",
+      "probability_a": 0.9525741268224334,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 15770,
+        "observation_stop_timestamp": 18270,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 3
+    },
+    {
+      "block_index": 0,
+      "correct": true,
+      "decision_commit_sha256": "4dce1fca83c91ee2ef7d9e97ad2c9e1ad05c8eb1a54a31f30aff591d15fe0202",
+      "expected_label": "B",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 14.0,
+        "spike_count::sim-readout::bin-00": 1.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 2.0,
+        "spike_count::sim-readout::bin-04": 2.0
+      },
+      "kind": "pattern_b",
+      "predicted_label": "B",
+      "probability_a": 0.04742587317756679,
+      "route": "right",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 20775,
+        "observation_stop_timestamp": 23275,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 4
+    },
+    {
+      "block_index": 0,
+      "correct": true,
+      "decision_commit_sha256": "8227b141a9c4320344036c54fd7c6264c6bed5aab1683dd578416fa082273061",
+      "expected_label": "B",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 14.0,
+        "spike_count::sim-readout::bin-00": 1.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 2.0,
+        "spike_count::sim-readout::bin-04": 2.0
+      },
+      "kind": "pattern_b",
+      "predicted_label": "B",
+      "probability_a": 0.04742587317756679,
+      "route": "right",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 25780,
+        "observation_stop_timestamp": 28280,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 5
+    },
+    {
+      "block_index": 0,
+      "correct": true,
+      "decision_commit_sha256": "fbce558b250b922f0ca991f72498c939a1ccf497293c4ebfa3f314827a4d95ce",
+      "expected_label": "A",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 8.0,
+        "spike_count::sim-readout::bin-00": 2.0,
+        "spike_count::sim-readout::bin-01": 2.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 1.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "pattern_a",
+      "predicted_label": "A",
+      "probability_a": 0.9525741268224334,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 30785,
+        "observation_stop_timestamp": 33285,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 6
+    },
+    {
+      "block_index": 1,
+      "correct": true,
+      "decision_commit_sha256": "a217a0cc5d07ddb2fdf27babb82a8e2ea4f32e32041cdd5ef591543ddcc5520a",
+      "expected_label": "A",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 8.0,
+        "spike_count::sim-readout::bin-00": 2.0,
+        "spike_count::sim-readout::bin-01": 2.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 1.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "pattern_a",
+      "predicted_label": "A",
+      "probability_a": 0.9525741268224334,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 35790,
+        "observation_stop_timestamp": 38290,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 7
+    },
+    {
+      "block_index": 1,
+      "correct": true,
+      "decision_commit_sha256": "172c6ca66a7c53a62d9e4ed325c6a624431b002a68ef3a19278c25c6cfbbea40",
+      "expected_label": "A",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 8.0,
+        "spike_count::sim-readout::bin-00": 2.0,
+        "spike_count::sim-readout::bin-01": 2.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 1.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "pattern_a",
+      "predicted_label": "A",
+      "probability_a": 0.9525741268224334,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 40795,
+        "observation_stop_timestamp": 43295,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 8
+    },
+    {
+      "block_index": 1,
+      "correct": true,
+      "decision_commit_sha256": "cde60b3a151ad6c6a8a3ea09db66e108d8a1b86ab216241c85d82cc8f70db3b5",
+      "expected_label": "A",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 8.0,
+        "spike_count::sim-readout::bin-00": 2.0,
+        "spike_count::sim-readout::bin-01": 2.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 1.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "pattern_a",
+      "predicted_label": "A",
+      "probability_a": 0.9525741268224334,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 45800,
+        "observation_stop_timestamp": 48300,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 9
+    },
+    {
+      "block_index": 1,
+      "correct": null,
+      "decision_commit_sha256": "8559d61ab9472bb3f9a40853f9519b0b1b19bfa607f4e08a3577e94be0b19bf6",
+      "expected_label": null,
+      "feature_values": {
+        "active_readout_group_count": 0.0,
+        "first_spike_latency_ms::sim-readout": 100.0,
+        "spike_count::sim-readout::bin-00": 0.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 0.0,
+        "spike_count::sim-readout::bin-04": 0.0
+      },
+      "kind": "sham",
+      "predicted_label": "A",
+      "probability_a": 0.5,
+      "route": "left",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 0,
+        "logical_sequence_present": false,
+        "observation_start_timestamp": 50805,
+        "observation_stop_timestamp": 53305,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 0
+      },
+      "trial_index": 10
+    },
+    {
+      "block_index": 1,
+      "correct": true,
+      "decision_commit_sha256": "e34e4fab6cbeed70f51509eb8739267877ae9b539ce729ee89a84980d49a7612",
+      "expected_label": "B",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 14.0,
+        "spike_count::sim-readout::bin-00": 1.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 2.0,
+        "spike_count::sim-readout::bin-04": 2.0
+      },
+      "kind": "pattern_b",
+      "predicted_label": "B",
+      "probability_a": 0.04742587317756679,
+      "route": "right",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 55810,
+        "observation_stop_timestamp": 58310,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 11
+    },
+    {
+      "block_index": 1,
+      "correct": true,
+      "decision_commit_sha256": "4129b10d026e742c8a88fdd207bcddfa37ea5bb52d9504c37b2043a775345aa2",
+      "expected_label": "B",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 14.0,
+        "spike_count::sim-readout::bin-00": 1.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 2.0,
+        "spike_count::sim-readout::bin-04": 2.0
+      },
+      "kind": "pattern_b",
+      "predicted_label": "B",
+      "probability_a": 0.04742587317756679,
+      "route": "right",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 60815,
+        "observation_stop_timestamp": 63315,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 12
+    },
+    {
+      "block_index": 1,
+      "correct": true,
+      "decision_commit_sha256": "0fd54ff45432eaa8f4f3fe47e706ea59472d5e1c279e2439c5cb0c33ce4c2284",
+      "expected_label": "B",
+      "feature_values": {
+        "active_readout_group_count": 1.0,
+        "first_spike_latency_ms::sim-readout": 14.0,
+        "spike_count::sim-readout::bin-00": 1.0,
+        "spike_count::sim-readout::bin-01": 0.0,
+        "spike_count::sim-readout::bin-02": 0.0,
+        "spike_count::sim-readout::bin-03": 2.0,
+        "spike_count::sim-readout::bin-04": 2.0
+      },
+      "kind": "pattern_b",
+      "predicted_label": "B",
+      "probability_a": 0.04742587317756679,
+      "route": "right",
+      "state_history": [
+        [
+          "scheduled",
+          "pre_stimulus",
+          null
+        ],
+        [
+          "pre_stimulus",
+          "stimulating",
+          null
+        ],
+        [
+          "stimulating",
+          "artefact_blanking",
+          null
+        ],
+        [
+          "artefact_blanking",
+          "observing",
+          null
+        ],
+        [
+          "observing",
+          "featurizing",
+          null
+        ],
+        [
+          "featurizing",
+          "decision_committed",
+          null
+        ],
+        [
+          "decision_committed",
+          "label_revealed",
+          null
+        ],
+        [
+          "label_revealed",
+          "inter_trial",
+          null
+        ],
+        [
+          "inter_trial",
+          "complete",
+          null
+        ]
+      ],
+      "telemetry": {
+        "biological_claim": false,
+        "event_count": 5,
+        "logical_sequence_present": true,
+        "observation_start_timestamp": 65820,
+        "observation_stop_timestamp": 68320,
+        "source": "cl-sdk-responsive-e3",
+        "stim_count": 2
+      },
+      "trial_index": 13
+    }
+  ]
+}

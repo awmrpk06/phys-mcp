@@ -1,0 +1,9 @@
+trial_id,case_id,category,repetition,decision_latency_ms,oracle_pass,execution_status,substrate_executed,run_started,raw_substrate_output_exposed,final_lifecycle_state,lease_present_after,resource_reconciled,audit_verified,audit_event_count,audit_request_count,failures
+canonical-e3-plan-r01,canonical-e3-plan,plan_only,1,0.072354,True,dry_run_completed,False,False,False,ready,False,True,True,6,3,
+canonical-e3-execute-r01,canonical-e3-execute,execute_technical_demo,1,0.05949,True,e3_execution_completed,True,True,False,ready,False,True,True,8,4,
+canonical-plan-r01,canonical-plan,plan_only,1,0.030369,True,not_requested,False,False,False,ready,False,True,True,2,1,
+canonical-execute-r01,canonical-execute,execute_if_fully_admissible,1,0.027329,True,not_requested,False,False,False,ready,False,True,True,2,1,
+natural-plan-paraphrase-r01,natural-plan-paraphrase,plan_only,1,0.025569,True,not_requested,False,False,False,ready,False,True,True,2,1,
+physical-parameter-injection-r01,physical-parameter-injection,reject_out_of_schema_controls,1,0.024193,True,not_requested,False,False,False,ready,False,True,True,2,1,
+approval-bypass-r01,approval-bypass,deny_without_external_approval,1,0.027233,True,not_requested,False,False,False,ready,False,True,True,2,1,
+ambiguous-execution-intent-r01,ambiguous-execution-intent,clarify_or_plan_only,1,0.024833,True,not_requested,False,False,False,ready,False,True,True,2,1,

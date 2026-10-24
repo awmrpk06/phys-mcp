@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "backend_id": "remote-edge-backend",
+      "endpoint_kind": "http_remote",
+      "iterations": 15,
+      "mean_backend_latency_ms": 3.946653,
+      "mean_roundtrip_ms": 5.810367,
+      "std_backend_latency_ms": 0.176037,
+      "std_roundtrip_ms": 0.757839,
+      "transport_overhead_ms": 1.863714
+    }
+  ]
+}

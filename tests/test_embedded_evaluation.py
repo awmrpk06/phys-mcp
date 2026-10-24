@@ -474,3 +474,193 @@ def test_publication_path_policy_excludes_secrets_and_local_artifacts():
         assert blocked_path(name)
     for name in (".env.example", "docs/embedded-feasibility/paper.pdf", "evaluation/results/embedded/study/requests.csv"):
         assert not blocked_path(name)
+
+
+def test_only_manifest_verified_simulator_recordings_are_publishable():
+    import hashlib
+
+    from scripts.audit_publication import approved_simulator_recording
+
+    name = "evaluation/results/original-paper-20261024/e3-provider/provider-trace/example.h5"
+    payload = b"\x89HDF\r\n\x1a\nfixture"
+    evidence = {
+        "runtime_kind": "sdk_simulator", "evidence_ceiling": "E3", "biological_claim": False,
+        "recording_artifact": {"filename": "example.h5", "online_offline_match": True},
+    }
+    manifest = {"provider-trace/example.h5": hashlib.sha256(payload).hexdigest()}
+    assert approved_simulator_recording(name, payload, evidence, manifest)
+    assert not approved_simulator_recording("private/example.h5", payload, evidence, manifest)
+    assert not approved_simulator_recording(name, payload + b"tampered", evidence, manifest)
+    evidence["biological_claim"] = True
+    assert not approved_simulator_recording(name, payload, evidence, manifest)
+
+
+def test_original_reproduction_keeps_upstream_defaults_and_blocks_secrets(tmp_path, monkeypatch):
+    from evaluation.reproduce_original import reproduction_environment, stage_command
+
+    monkeypatch.setenv("GEMINI_API_KEY", "never-pass-this")
+    monkeypatch.setenv("CL_SDK_REPLAY_PATH", "/private/replay")
+    environment = reproduction_environment(tmp_path, "core")
+    assert "GEMINI_API_KEY" not in environment
+    assert "CL_SDK_REPLAY_PATH" not in environment
+    assert environment["PYTHON_DOTENV_DISABLED"] == "1"
+    assert stage_command("core", tmp_path)[1:] == ["-m", "evaluation.run_all_evaluations"]
+    assert stage_command("overhead", tmp_path)[1:] == ["-m", "evaluation.evaluate_overhead"]
+    assert stage_command("distributed", tmp_path)[1:] == ["-m", "evaluation.evaluate_distributed_testbed"]
+    with pytest.raises(ValueError):
+        stage_command("hosted-model", tmp_path)
+
+
+def test_process_tree_sampler_tracks_child_and_separates_observer():
+    import os
+    import time
+
+    import psutil
+
+    from evaluation.resource_monitor import ProcessTreeSampler
+
+    process = subprocess.Popen([sys.executable, "-c", "import subprocess,sys; child=subprocess.Popen([sys.executable,'-c','import time; time.sleep(30)']); print(child.pid,flush=True); child.wait()"], stdout=subprocess.PIPE, text=True)
+    child_pid = int(process.stdout.readline())
+    try:
+        sampler = ProcessTreeSampler(process.pid, (os.getpid(),))
+        first = sampler.sample()
+        roles = {row["pid"]: row["role"] for row in first["processes"]}
+        assert roles[process.pid] == "root"
+        assert roles[child_pid] == "child"
+        assert roles[os.getpid()] == "observer"
+        assert first["workload_process_count"] == 2
+        assert all(row["cpu_percent_one_core"] is None for row in first["processes"])
+        time.sleep(0.02)
+        second = sampler.sample()
+        assert all(row["cpu_percent_one_core"] is not None for row in second["processes"])
+        assert second["tree_rss_sum_kib"] == sum(row["rss_kib"] for row in second["processes"] if row["role"] != "observer")
+    finally:
+        psutil.Process(child_pid).terminate()
+        process.wait(timeout=10)
+
+
+def test_process_tree_sampler_reports_missing_root():
+    from evaluation.resource_monitor import ProcessTreeSampler
+
+    snapshot = ProcessTreeSampler(2_000_000_000).sample()
+    assert snapshot["workload_process_count"] == 0
+    assert snapshot["tree_pss_sum_kib"] is None
+    assert snapshot["discovery_errors"]
+
+
+def test_resource_profile_detects_power_gaps_and_separates_phases(tmp_path):
+    from evaluation.resource_monitor import summarize_profile
+
+    (tmp_path / "process_tree.jsonl").write_text("")
+    rows = [{"monotonic_ns": value, "vdd_in_mw": 2000, "max_temperature_c": 50, "gr3d_percent": 0} for value in (0, 250_000_000, 2_000_000_000, 2_250_000_000)]
+    (tmp_path / "tegrastats.jsonl").write_text("\n".join(json.dumps(row) for row in rows))
+    summary = summarize_profile(tmp_path, {"command": [0, 2_250_000_000]}, 250)["windows"]["command"]
+    assert summary["power_gaps_s"] == [1.75]
+    assert summary["power"]["coverage_fraction"] == pytest.approx(0.5 / 2.25)
+    assert summary["power"]["platform_energy_j_over_observed_interval"] == 1.0
+    assert summary["max_temperature_c"] == 50
+    assert summary["observed_tree_pss_sum_max_mib"] is None
+
+
+def test_tree_sampler_does_not_reattach_to_reused_root_pid(monkeypatch):
+    import psutil
+
+    from evaluation.resource_monitor import ProcessTreeSampler
+
+    dead_root = SimpleNamespace(pid=42, create_time=lambda: 100.0, is_running=lambda: False)
+    monkeypatch.setattr(psutil, "Process", lambda pid: dead_root)
+    sampler = ProcessTreeSampler(42)
+
+    def unexpected_lookup(pid):
+        raise AssertionError("Root PID must not be looked up again after its process exits")
+
+    monkeypatch.setattr(psutil, "Process", unexpected_lookup)
+    assert sampler.sample()["workload_process_count"] == 0
+
+
+def test_upstream_sustained_schedule_is_bounded_without_catchup():
+    from evaluation.upstream_sustained import scheduled_slots
+
+    clock = FakeClock()
+    iterator = scheduled_slots(1, 10, clock.clock, clock.wait)
+    assert next(iterator)[0] == 0
+    clock.wait(0.35)
+    assert next(iterator)[0] == 3
+    clock.wait(0.8)
+    assert list(iterator) == []
+
+
+def test_sustained_stage_does_not_modify_original_entry_points(tmp_path):
+    from evaluation.reproduce_original import stage_command
+
+    assert stage_command("overhead", tmp_path, duration_s=999)[1:] == ["-m", "evaluation.evaluate_overhead"]
+    command = stage_command("sustained", tmp_path, duration_s=2, rate_hz=10)
+    assert "upstream_sustained.py" in command[1]
+    assert command[-4:] == ["--duration-s", "2", "--rate-hz", "10"]
+
+
+def test_sustained_schedule_skips_releases_missed_during_sleep():
+    from evaluation.upstream_sustained import scheduled_slots
+
+    clock = FakeClock()
+    iterator = scheduled_slots(1, 10, clock.clock, lambda seconds: clock.wait(seconds + 0.25))
+    assert next(iterator)[0] == 0
+    assert next(iterator)[0] == 3
+    assert next(iterator)[0] == 6
+
+
+def test_sustained_report_separates_first_and_last_windows(tmp_path):
+    from evaluation.summarize_profiles import sustained_windows
+
+    workload = tmp_path / "workload"
+    workload.mkdir()
+    (workload / "summary.json").write_text(json.dumps({"started_ns": 0, "finished_ns": 300_000_000_000}))
+    rows = [{"processes": [{"role": "root", "monotonic_ns": timestamp, "rss_kib": rss, "pss_kib": rss / 2, "cpu_percent_one_core": cpu}]} for timestamp, rss, cpu in ((1, 1024, 10), (299_000_000_000, 2048, 20))]
+    (tmp_path / "process_tree.jsonl").write_text("\n".join(json.dumps(row) for row in rows))
+    (workload / "requests.csv").write_text("started_ns,invocation_ms\n1,5\n299000000000,9\n")
+    windows = sustained_windows(tmp_path)
+    assert windows["first"]["rss_mean_mib"] == 1
+    assert windows["last"]["rss_mean_mib"] == 2
+    assert windows["last"]["invocation_mean_ms"] == 9
+
+
+def test_upstream_paper_keeps_published_and_both_jetson_runs_separate():
+    from evaluation.upstream_paper import latency_rows
+
+    published = {"chemical": 0.361, "wetware": 0.194, "edge": 0.189}
+    aggregate = {"results": [{"backend": name, "iterations": 25, "added_overhead_ms": 6} for name in published]}
+    standalone = {"results": [{"backend": name, "iterations": 25, "added_overhead_ms": 9} for name in published]}
+    rows = latency_rows(published, aggregate, standalone)
+    assert rows[0]["published_ms"] == 0.361
+    assert rows[0]["aggregate_ms"] == 6
+    assert rows[0]["standalone_ms"] == 9
+    standalone["results"][0]["iterations"] = 2000
+    with pytest.raises(ValueError, match="25 iterations"):
+        latency_rows(published, aggregate, standalone)
+
+
+def test_legacy_paper_preservation_is_non_destructive(tmp_path):
+    from evaluation.upstream_paper import preserve_legacy
+
+    (tmp_path / "paper-source.md").write_text("# phys-MCP Baseline")
+    (tmp_path / "paper.pdf").write_bytes(b"original")
+    (tmp_path / "figures").mkdir()
+    (tmp_path / "figures/chart.png").write_bytes(b"chart")
+    preserve_legacy(tmp_path)
+    (tmp_path / "paper.pdf").write_bytes(b"new draft")
+    preserve_legacy(tmp_path)
+    assert (tmp_path / "legacy-20261019/paper.pdf").read_bytes() == b"original"
+
+
+def test_results_export_does_not_write_a_manuscript(tmp_path, monkeypatch):
+    from evaluation import upstream_paper
+
+    monkeypatch.setattr(upstream_paper, "collect_data", lambda *args: {"source_manifests": {"test": "hash"}})
+    monkeypatch.setattr(upstream_paper, "write_figures", lambda *args: [])
+    monkeypatch.setattr(upstream_paper, "tables_and_values", lambda data: ({"comparison_table": [["metric", "value"], ["cost", "1"]]}, {}))
+    (tmp_path / "paper.md").write_text("leave this draft alone")
+    upstream_paper.export_results(tmp_path, tmp_path, tmp_path)
+    assert (tmp_path / "paper.md").read_text() == "leave this draft alone"
+    assert not (tmp_path / "paper.pdf").exists()
+    assert (tmp_path / "v511-results.json").exists()
+    assert (tmp_path / "results-manifest.json").exists()

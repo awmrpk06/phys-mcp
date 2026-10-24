@@ -1,0 +1,19 @@
+{
+  "admission_deadline_ns": 434063148958201,
+  "completed_requests": 20,
+  "duration_s": 2.0,
+  "finished_ns": 434063149255109,
+  "idempotent_replays": 0,
+  "latency_mean_ms": 10.37689555,
+  "maintenance_failures": 0,
+  "missed_releases": 0,
+  "peak_rss_kib": 88196,
+  "planned_releases": 20,
+  "rate_hz": 10.0,
+  "ready_ns": 434058148231408,
+  "scope": "Sustained extension, not the original 25-run overhead protocol. Same original task factory and explicit maintenance; no injected faults or hosted model.",
+  "started_ns": 434061148958201,
+  "successful_requests": 20,
+  "unexpected_backends": 0,
+  "upstream_commit": "36fbae002b0a9e066416ea9cafbb966a33fe53bb"
+}

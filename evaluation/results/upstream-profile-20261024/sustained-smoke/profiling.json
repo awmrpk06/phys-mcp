@@ -1,0 +1,139 @@
+{
+  "baseline_s": 1.0,
+  "interval_ms": 250,
+  "min_free_disk_mib": 512,
+  "observer_sources": {
+    "evaluation/evaluate_tegra_resources.py": "dc0560d6a93a540c8a0dbcda3ec8e42491c3cc5ba00822809ec09961b1c66539",
+    "evaluation/reproduce_original.py": "afc4e29c869ba31ebd991e2f1513b3b004941c707918a705f1d66c98a995ee2b",
+    "evaluation/resource_monitor.py": "b61ebd0f4830962cd916044e2edf3435e44b4279b6c3291c37c587a9bfbf7228",
+    "evaluation/upstream_sustained.py": "341277e1f80e53ce34d4c450bcc42636d49805479baf0f5f536785cd5445a0b1"
+  },
+  "temperature_stop_c": 65.0,
+  "thermal_trip_points": [
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone2"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone2"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone2"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone0"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone0"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone0"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone7"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone7"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone7"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone5"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone5"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone5"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone3"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone3"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone3"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone1"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone1"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone1"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone8"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone6"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone6"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone6"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 70.0,
+      "zone": "thermal_zone4"
+    },
+    {
+      "kind": "critical",
+      "temperature_c": 104.5,
+      "zone": "thermal_zone4"
+    },
+    {
+      "kind": "passive",
+      "temperature_c": 99.0,
+      "zone": "thermal_zone4"
+    }
+  ]
+}

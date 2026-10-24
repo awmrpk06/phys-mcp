@@ -1,0 +1,7 @@
+Experiment,Protocol,Observed result
+Upstream tests,Unchanged v5.1.1 suite,146 passed
+Selection,Original seven cases,7/7 principal; 6/7 simpler selectors
+Fault handling,Original five scenarios,5/5 expected outcomes
+E3 provider,Official SDK Simulator,14 trials; reconstruction matched
+Distributed A6,Full original matrix,Incomplete: connection errors
+Sustained edge,"300 s, 10 requests/s",3000/3000 succeeded

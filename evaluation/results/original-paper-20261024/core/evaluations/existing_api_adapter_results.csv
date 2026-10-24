@@ -1,0 +1,2 @@
+backend_id,display_name,sdk_available,prepare_ready,prepare_details,required_modalities,telemetry_fields,lifecycle_reset_modes
+cortical-labs-backend,Cortical Labs CL API Backend,True,True,"Cortical Labs session opened successfully. channels=64, fps=25000",spikes,"backend_latency_ms,observation_latency_ms,readiness_state,health_status,recording_path,channel_count,fps,runtime_kind,age_of_information_ms,telemetry_source","soft_reset,rest,recalibrate"

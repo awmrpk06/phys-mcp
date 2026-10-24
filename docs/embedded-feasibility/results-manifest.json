@@ -1,0 +1,32 @@
+{
+  "evidence_manifests": {
+    "original-paper-20261024/core": "425240d7a16268e80be774266896f40184211d876372012fa75a6991ffaa8724",
+    "original-paper-20261024/distributed-standalone": "246bf36a4bcad05b7aa5307345387b1bcb643be47df5f807b973e9dcb4f4cd2d",
+    "original-paper-20261024/e3-control": "0a1f0649485ef926bfecce99462fbbf36ce5cef8c7819eaeb3c7beb94b10dc11",
+    "original-paper-20261024/e3-provider": "ec3892f9d2df97b23d086967487b7cce5ac1cd4bfba7fe4d3912e27ebf7c1cb5",
+    "original-paper-20261024/overhead-standalone": "767a1702b0dc14fd81b0b9369ec432b20507465e3a8a1d2288c89055fc0b9074",
+    "original-paper-20261024/tests": "9653f4e92f8e16976a359cef682ed5f4c9df31e563ea70ee7467ec7f2a46a174",
+    "original-paper-20261024/tests-python312": "56500ff2bcfc54b516e15040b68f833828d85ae5643ec8ec546362c1839766ea",
+    "upstream-profile-20261024/core": "78c6a96e9082087fdbb0309392ee4dfcbe167a718e5982e33a62a71c2948ed16",
+    "upstream-profile-20261024/e3-control": "042581ed0323631b6883f1547a24834451e61aeee20407c2000b4a63ae0433d3",
+    "upstream-profile-20261024/e3-provider": "9a7f912305a8e9dc728d0e30576de83fedb1ec312132057b11d89c542058c0a0",
+    "upstream-profile-20261024/http": "125ceccd930efe0df75885f0801335565d26d86fff6dac2aa87b1e6bec31e3c7",
+    "upstream-profile-20261024/overhead": "4c3861b8d9355ded7fcc81884bfbfa0b35550c54df2bbde797aea828a28b80b3",
+    "upstream-profile-20261024/sustained-300s-10hz": "e0564179652e0dcbc025533fdda0f175c2a03ecbb7b9d6ae6d7e72e7d1cc3a04",
+    "upstream-profile-20261024/sustained-smoke": "1af2dc9f5ced6527fef34ea8ee6e5879c82b0ad42e0227b145e5019ab8e68254"
+  },
+  "sha256": {
+    "figures/v511-latency-comparison.pdf": "c3c234a9955c20657d8477f660c419c685aec078c0567ff2fe49d34647b5f20b",
+    "figures/v511-latency-comparison.png": "a9d112212d8a289c997baa42c99956b01a1da468eae63bcf773899610b2d07c3",
+    "figures/v511-platform-traces.pdf": "c20296b4b564f4461031d02f4e14b99a37b49c7acb545cf992572e8db0df35fd",
+    "figures/v511-platform-traces.png": "a99794defb23eb28bd71db2e86f23ce6d104a6d2ce0ecad8f79a441290a58d35",
+    "figures/v511-sustained-cost.pdf": "863f410ecf0cf634066b3491d04603892f5916bf894c17ca018d634bebd208ff",
+    "figures/v511-sustained-cost.png": "eb9fccc805de748cd80190b5c25c38fd5ab2a829386aa5846a2a3459e9a79887",
+    "v511-comparison-table.csv": "a574803ba7825045852a57ec7425cf1f60c9c47bab7e2a6f7816a37cd179bb46",
+    "v511-growth-table.csv": "8f070ef3cf571aa3f676552b685a13cc801187555c1c49d8794a11b756454f0a",
+    "v511-outcome-table.csv": "fa40d147788431b5ed216d89c5530c83ae8a6d308544f8d8966be5b8937ec2f8",
+    "v511-resource-table.csv": "5e4d79681745c0e241ddc14c47f01c6e5f3de18f738070b17cd1bd1eda0b3d0f",
+    "v511-results.json": "62d225b90b5ea150950e53c9d09e08096f08fd77e669a4427fa22ddcb7e88f91"
+  },
+  "upstream_commit": "36fbae002b0a9e066416ea9cafbb966a33fe53bb"
+}

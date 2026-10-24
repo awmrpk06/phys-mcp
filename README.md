@@ -4,15 +4,23 @@ Current upstream: [fischesn/cp2n2](https://github.com/fischesn/cp2n2).
 This repository preserves the measured phys-MCP baseline and Jetson evaluation;
 its results must not be attributed to untested newer upstream versions.
 
-## Embedded Workshop Working Draft
+## Embedded Experiment Results
 
-[Read the paper (PDF)](docs/embedded-feasibility/paper.pdf) |
-[Markdown](docs/embedded-feasibility/paper.md) |
-[Data and reproduction](docs/embedded-feasibility/README.md)
+**Results and guides are the current deliverable. Paper writing is deferred.**
+Any previously published manuscript is an earlier working draft, not the current
+interpretation of these experiments or an accepted publication.
 
-The four-page draft reports a 60-trial Jetson Orin Nano study with paired local
-and localhost HTTP measurements. It is published here for author review, not as
-an accepted workshop paper. Authorship and venue remain to be finalized.
+- [Results index and reproduction guide](docs/embedded-feasibility/README.md)
+- [Original-paper protocol and comparison](docs/embedded-feasibility/original-protocol.md)
+- [CPU, memory, temperature, GPU and power report](evaluation/results/upstream-profile-20261024/profile-report.md)
+- [Resource measurement protocol](docs/embedded-feasibility/upstream-resource-protocol.md)
+
+The October 24 experiments use unmodified CP2N2 v5.1.1 in an isolated checkout.
+The original local and simulator workloads ran, while the distributed campaign
+remains incomplete. A separate five-minute run completed 3,000 requests at 10 Hz
+but showed rising memory, CPU and latency. Raw observations, failures, plots,
+tables, complete software-simulator recordings and checksum manifests are retained.
+This is evidence about embedded feasibility and its limits, not Jetson superiority.
 
 `phys-MCP` is a substrate-aware control-plane prototype for exposing heterogeneous **physical neural network (PNN)** resources as discoverable, invocable, and monitorable software-visible backends.
 
